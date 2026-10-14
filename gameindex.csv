@@ -1,12 +1,16 @@
 date,team,opponent,game_type,watched,notes_complete,scout_complete,data_added,notes_file
 2026-09-27,Virginia,Vanderbilt,Exhibition,Yes,Yes,No,No,N/A
+2026-10-02,SMU,TCU,Secret Scrimmage,N/A,N/A,No,No,N/A
 2026-10-04,Georgetown,Wake Forest,Exhibition,Yes,Yes,No,No,N/A
 2026-10-07,Dayton,Xavier,Exhibition,No,No,No,No,N/A
 2026-10-08,Belmont,Duke,Exhibition,No,No,No,No,N/A
 2026-10-09,Richmond,Virginia,Exhibition,No,No,No,No,N/A
 2026-10-09,USC,North Carolina,Exhibition,No,No,No,No,N/A
 2026-10-10,Mississippi State,Florida State,Exhibition,No,No,No,No,N/A
+2026-10-10,Boston College,Providence,Secret Scrimamge,N/A,N/A,No,No,N/A
+2026-10-10,Florida State,Queens,Secret Scrimmage,N/A,N/A,No,No,N/A
 2026-10-11,Maryland,Georgia Tech,Exhibition,No,No,No,No,N/A
+2026-10-11,Villanova,Rutgers,Exhibition,No,No,No,No,No,N/A
 2026-10-13,Syracuse,UConn,Exhibition,No,No,No,No,N/A
 2026-10-14,Florida State,Auburn,Exhibition,No,No,No,No,N/A
 2026-10-14,Drexel,St John's,Exhibition,No,No,No,No,N/A
@@ -19,6 +23,7 @@ date,team,opponent,game_type,watched,notes_complete,scout_complete,data_added,no
 2026-10-17,Notre Dame,Dayton,Exhibition,No,No,No,No,N/A
 2026-10-17,Stanford,Santa Clara,Exhibition,No,No,No,No,N/A
 2026-10-17,VCU,Old Dominion,Exhibition,No,No,No,No,N/A
+2026-10-17,Villanova,George Mason,Exhibition,No,No,No,No,N/A
 2026-10-18,Syracuse,Siena,Exhibition,No,No,No,No,N/A
 2026-10-18,Mississippi State,NC State,Exhibition,No,No,No,No,N/A
 2026-10-18,North Carolina,Indiana,Exhibition,No,No,No,No,N/A
@@ -29,6 +34,7 @@ date,team,opponent,game_type,watched,notes_complete,scout_complete,data_added,no
 2026-10-20,UConn,Michigan State,Exhibition,No,No,No,No,N/A
 2026-10-21,Louisville,Kansas,Exhibition,No,No,No,No,N/A
 2026-10-22,Virginia,Villanova,Exhibition,No,No,No,No,N/A
+2026-10-22,Drexel,Lafayette,Exhibition,No,No,No,No,N/A
 2026-10-23,Georgia,Clemson,Exhibition,No,No,No,No,N/A
 2026-10-23,Vanderbilt,Miami,Exhibition,No,No,No,No,N/A
 2026-10-23,Notre Dame,DePaul,Exhibition,No,No,No,No,N/A
@@ -36,15 +42,20 @@ date,team,opponent,game_type,watched,notes_complete,scout_complete,data_added,no
 2026-10-23,Texas Tech,Kentucky,Exhibition,No,No,No,No,N/A
 2026-10-24,Florida State,LSU,Exhibition,No,No,No,No,N/A
 2026-10-24,Georgia Tech,Providence,Exhibition,No,No,No,No,N/A
+2026-10-24,NC State,Lenoir-Rhyne,Exhibition,No,No,No,No,N/A
 2026-10-24,Syracuse,Niagara,Exhibition,No,No,No,No,N/A
 2026-10-24,Cal,Oregon State,Exhibition,No,No,No,No,N/A
 2026-10-24,Gonzaga,Arkansas,Exhibition,No,No,No,No,N/A
+2026-10-24,Bucknell,Endicott,Exhibition,No,No,No,No,N/A
+2026-10-24,Old Dominion,Virginia State,Exhibition,No,No,No,No,N/A
 2026-10-25,Duke,Kansas,Exhibition,No,No,No,No,N/A
 2026-10-25,Texas A&M,SMU,Exhibition,No,No,No,No,N/A
 2026-10-25,Stanford,Oregon,Exhibition,No,No,No,No,N/A
 2026-10-25,Marquette,Michigan State,Exhibition,No,No,No,No,N/A
+2026-10-25,Boston College,MIT,Exhibition,No,No,No,No,N/A
 2026-10-26,Penn State,Drexel,Exhibition,No,No,No,No,N/A
 2026-10-26,Western Carolina,USC Upstate,Exhibition,No,No,No,No,N/A
+2026-10-26,Drexel,Penn State,Exhibition,No,No,No,No,N/A
 2026-10-27,Charlotte,North Carolina,Exhibition,No,No,No,No,N/A
 2026-10-27,Purdue,UConn,Exhibition,No,No,No,No,N/A
 2026-10-28,Presbyterian,Clemson,Exhibition,No,No,No,No,N/A
