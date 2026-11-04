@@ -1,0 +1,378 @@
+---
+title: "UMES Hawks Scouting Report"
+format:
+    html:
+        toc: true
+        code-fold: true
+        theme: cosmo
+        css: styles.css
+---
+
+::: {.team-snapshot}
+
+## Team Snapshot
+
+- **Record:** 0–0
+- **Conference Record:** 0–0
+- **Conference:** MEAC
+- **Head Coach:** Malikah Willis
+- **Last Season:** 20-15 (11-3 MEAC) Lost 2nd Round WNIT 
+- **Key Returners:** Kalise Hill, Jaida Cameron, Jailynn Clayton, Desi Taylor, Kaliya Perry
+- **Key Transfers/Newcomers:** Makylah Moore, Marley Jeffers, Chasity Wilson,  Aliza Murray
+- **Style Notes:** Physical, aggressive, heavy PnR manipulation, crashes offensive glass
+
+:::
+
+# Overview/Identity
+
+UMES plays with an aggressive, physical offensive identity built around creating confusion in wing pick-and-roll, using disguised Spain actions and big ghost screens to force coverage mistakes. Their bigs are heavily involved in the offense, working around ballhandlers from the high post and screening actions to create inside-out opportunities, while perimeter players look to cut, relocate, and attack open space rather than force possessions. They also place a major emphasis on the offensive glass, sending all five players to crash and generate extra possessions, especially from the corners. Overall, they want to create advantages through movement, screening, and physicality rather than relying on one primary scorer.
+
+::: {.three-keys}
+
+## Three Keys
+
+1. Guards need to play off two feet, stay patient against heavy help, and reverse the ball.
+2. Be physical against ball screens and hard rolls; keep offensive rebounders out of the paint.
+3. Force bigs to catch outside the paint and keep the ball on the perimeter.
+
+:::
+
+# Personnel
+
+:::: {.player-card}
+
+## Desi Taylor
+
+**Role:** Movement shooter
+
+**Identity:** Best shooter on the team; high volume catch-and-shoot threat off flares and pindowns.
+
+### Tendencies
+- Patient perimeter mover who tries to work around bigs to create advantages
+- Most 3s from wing flares or stagger pindowns (off rip double stagger or as a solo action)
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Lock and trail stagger pindowns
+- Go over flares and try to top lock to force her into the paint
+
+:::
+
+### Numbers
+- 102/123 (83%) 3s were catch and shoot
+- Shot 39% from spot up (no dribble jumper)
+- Shot 50% from off-ball screens going to her left (6/12)
+
+### Clip Evidence
+- [Watch clip - single flare away](clips/desi-taylor-singleflare.mp4){.clip-button}
+- [Watch clip - stack flare](clips/desi-taylor-stackflare.mp4){.clip-button}
+- [Watch clip - stagger pindown](clips/desi-taylor-staggerpindown.mp4){.clip-button}
+
+::::
+
+:::: {.player-card}
+
+## Kalise Hill
+
+**Role:** Patient table setter
+
+**Identity:** Great relocator and cutter; limited in size and tries to stay on perimeter offensively; very patient in ball screens and will only attack against obvious space
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Under all ball screens
+- Ball denial against first pass away
+
+:::
+
+### Numbers
+- 27.7% TO% (3rd highest on team from 2025-26)
+- 0.82 AST/TO (highest on team from 2025-26)
+- 18.4% 3-point shooter
+- 42.7% FG% at the rim (50/117)
+
+### Clip Evidence 
+- [Watch clip - Perimeter attack](clips/hill-attackcloseout.mp4){.clip-button}
+- [Watch clip - Perimeter movement](clips/hill-flare.mp4){.clip-button}
+- [Watch clip - Patience](clips/hill-patience.mp4){.clip-button}
+- [Watch clip - Relocation](clips/hill-perimeterrelocation.mp4){.clip-button}
+
+::::
+
+:::: {.player-card}
+
+## Chasity Wilson
+
+**Role:** Primary ballhandler/initiator
+
+**Identity:** quick first steps; likes to attack down right side of floor and get to rim or into 1/2 dribble pull-ups off ball screen
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- At the level in ball screen (take away anything inside 3-point line)
+- Ball pressure with quickest defender
+
+:::
+
+### Numbers
+- 48/69 shots located in middle of the floor as PnR ball handler
+- 0.897 PPP when finishing at the rim out of ball screen
+- 0.541 PPP when taking jumper out of ball screen
+- 0.250 PPP when taking floater out of ball screen
+
+### Clip Evidence
+- [Watch clip - Middle pullup](clips/wilson-middlepullup.mp4){.clip-button}
+- [Watch clip - Sideline attack left](clips/wilson-sidelineattack.mp4){.clip-button}
+- [Watch clip - Sideline attack right](clips/wilson-sidelineright.mp4){.clip-button}
+
+::::
+
+:::: {.player-card}
+
+## Jailynn Clayton
+
+**Role:** Slasher and physical big
+
+**Identity:** very physical and aggressive on offensive glass; comfortable with ball in left hand; will look to pull up closer to basket instead of getting to rim
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Lengthy and rangy defender to guard her
+- Ball pressure off the catch to limit physicality and contest jumpers
+
+:::
+
+### Clip Evidence
+- [Watch clip - Attack left](clips/clayton-driveleft.mp4){.clip-button}
+- [Watch clip - Step through left](clips/clayton-stepthrough.mp4){.clip-button}
+
+::::
+
+:::: {.player-card}
+
+## Kaliya Perry
+
+**Role:** Post facilitator
+
+**Identity:** mostly works out of high post; looks for catches at free throw line and works toward middle out of post; short roll out of ball screen and attack
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Be physical and force catch closer to 3-point line in post
+- Send wing help against short roll to force her to give the ball up
+
+:::
+
+### Numbers
+- 12/22 out of short corner (both sides of basket) -> likes to face up and take jumper out of post
+
+### Clip Evidence
+- [Watch clip - Hard roll](clips/perry-dive.mp4){.clip-button}
+- [Watch clip - Faceup](clips/perry-faceup.mp4){.clip-button}
+- [Watch clip - Short corner](clips/perry-shortcornerjumper.mp4){.clip-button}
+
+::::
+
+# Offense
+
+:::: {.concept-card}
+
+## 1. Wing PnR manipulation
+
+**What They Do:**
+Use disguised Spain and big ghost action to create confusion in coverages
+
+### How They Do It
+
+- Set wing ball screen with strongside block filled; exchange with roller during ball screen
+- Have variations where big sets backscreen or flares out to perimeter for ball reversal/attack
+
+::: {.game-plan}
+
+### How I'd Defend It
+
+- Send tag from corner against roller and work out of rotation (horrible shooting team, primary concern is at the rim)
+- Stay at the level or in drop and keep second big defender low to stunt roll
+
+:::
+
+### Clip Evidence
+- [Watch clip - Wing PnR](clips/video/wingPNR-postmanipulation.mp4){.clip-button}
+- [Watch clip - Wing PnR](clips/video/wingPNR-postmanipulation2.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 2. Inside-out offense
+
+**What They Do:**
+Play inside-out with bigs working around ballhandlers to create advantages
+
+**How They Do It:**
+- Use mostly double big lineups and exchange high-low positioning to facilitate ball reversals and seals
+- Guards relocate around perimeter and play off bigs to create improvised offense
+
+::: {.game-plan}
+
+**How I'd Defend It:**
+- Maintain high ball pressure on guards and force them to make quick decisions off the dribble
+- Deny passes to the bigs and make the guards create for themselves
+
+:::
+
+### Clip Evidence
+- [Watch clip - Inside Out](clips/video/inside-out-offense.mp4){.clip-button}
+- [Watch clip - Inside Out](clips/video/inside-out-offense2.mp4){.clip-button}
+- [Watch clip - Inside Out](clips/video/inside-out-offense3.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 3. Five-player offensive rebounding
+
+**What They Do:**
+Crash offensive glass with all five, especially out of corners
+
+**How They Do It:**
+- Stay deep in corners off high PnR and crash glass after drive
+- Guards use quickness and bigs use physicality to gain advantageous position
+
+::: {.game-plan}
+
+**How I'd Defend It:**
+- Find man after shot goes up, especially if set in gap help
+
+:::
+
+::::
+
+# Defense
+
+:::: {.concept-card}
+
+## 1. 1-2-1-1 and 2-3 zone looks
+
+**What They Do:**
+Mix in full court 1-2-1-1 and half court 2-3 throughout the game
+
+**How They Do It:**
+- Aggressive out of 1-2-1-1 with traps on first dribble across halfcourt and on first inbounds pass
+- 2-3 aligned with one guard on-ball and the second guard denying high post
+
+::: {.game-plan}
+
+**How I'd Attack It:**
+- 2-1-2 press break alignment with secondary ballhandler in middle of the floor (turn and go)
+- Put bigger defender in high post and fill opposite wing to get zone in rotation
+
+:::
+
+### Clip Evidence
+- [Watch clip - 1-2-1-1 full court](clips/video/1-2-1-1-fullcourt.mp4){.clip-button}
+- [Watch clip - 1-2-1-1 full court](clips/video/1-2-1-1-fullcourt2.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 2. Deep drop with bigs (#35) but mix up coverages with big sometimes at the level
+
+**What They Do:**
+#35 usually sits under the basket in deep drop while more versatile bigs are at the level or in show + recover
+
+**How They Do It:**
+- Pre-switch around #35 to maintain her position
+- Tag heavily from both corner and wing to block off short roll and rocket action
+
+::: {.game-plan}
+
+**How I'd Attack It:**
+- Allow bigs to stretch the floor and attack with space in short roll against drop
+- Have guard turn the corner and hit skip pass and attach closeouts
+
+:::
+
+### Clip Evidence
+- [Watch clip - Ball screen coverage](clips/video/ballscreen-coverage.mp4){.clip-button}
+- [Watch clip - Ball screen coverage](clips/video/ball-screencoverage2.mp4){.clip-button}
+- [Watch clip - Ball screen coverage](clips/video/ball-screencoverage3.mp4){.clip-button}
+- [Watch clip - Corner tag](clips/video/corner-tag.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 3. Jump switches + hard stunts with quick guards
+
+**What They Do:**
+Most of the smaller guards at POA switch aggressively and try to maintain ball pressure off screens
+
+**How They Do It:**
+- Step up on ballhandler after screen; high hands and physicality
+- If not switching, make sure to stop ballhandler progress quickly and then recover
+
+::: {.game-plan}
+
+**How I'd Attack It:**
+- Look for slips and seals against mismatches (size advantage)
+
+:::
+
+### Clip Evidence
+- [Watch clip - Ball pressure](clips/video/ball-pressure.mp4){.clip-button}
+- [Watch clip - Ball pressure](clips/video/ball-pressure2.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 4. Collapse heavily and load up the box against middle drives
+
+### What They Do
+Tag from both opposite corner and wing and position bigs at high post or middle of the paint when more than 1 pass away
+
+### How They Do It
+
+- Pre-switch around #35 to maintain her position and send help to paint to force kickouts
+
+::: {.game-plan}
+
+### How I'd Attack It 
+- Be patient in drives and play off two feet to find kickouts
+- Continued ball reversals to force closeouts and attack them
+
+:::
+
+### Clip Evidence
+- [Watch clip - Gap Help](clips/video/heavy-gap-help.mp4){.clip-button}
+- [Watch clip - Gap Help](clips/video/heavy-gap-help2.mp4){.clip-button}
+
+::::
+
+# Common Actions/ATOs
+- High horns - [Watch Clip - High horns veer](clips/video/high-horns-veer.mp4){.clip-button}
+- Wing Miami as primary action - [Watch Clip - Wing Miami](clips/video/wing-miami.mp4){.clip-button}
+- Swing rip double stagger (Horns over zoom as secondary action) - [Watch Clip - Swing rip double stagger](clips/video/swing-rip-doublestagger.mp4){.clip-button}
+- Pistol Spain - [Watch Clip - Pistol Spain](clips/video/pistol-spain.mp4){.clip-button}
+- Pistol UCLA - [Watch Clip - Pistol UCLA](clips/video/pistol-UCLA.mp4){.clip-button}
+- Pistol 77 shuffle (Miami Spain as secondary) - [Watch Clip - Pistol 77 shuffle](clips/video/pistol-77-shuffle.mp4){.clip-button} &  [Watch Clip - Pistol 77 shuffle](clips/video/pistol-77-shuffle2.mp4){.clip-button} 
+- Gut - top PnR - [Watch Clip - Gut - top PnR](clips/video/gut-topPnR.mp4){.clip-button}
+- Miami Spain + Miami 77 (out of same alignment) - [Watch Clip - Miami variations](clips/video/wing-miami-spain.mp4){.clip-button} & [Watch Clip - Miami variations](clips/video/wing-miami-77.mp4){.clip-button}
+
+...
+
+# Final Three Keys
+1. Guards need to play off two feet, be patient against heavy help, and reverse the ball to force defense into rotation
+2. Be physical against ball screens and hard rolls and do not let offensive rebounders touch the paint 
+3. Force bigs to make catches outside of paint and be at the level in ball screens to keep ball on perimeter 
+
+...
+
+
