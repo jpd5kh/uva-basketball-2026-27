@@ -1,0 +1,505 @@
+---
+title: "Drexel Dragons Scouting Report"
+format:
+    html:
+        toc: true
+        code-fold: true
+        theme: cosmo
+        css: styles.css
+---
+
+::: {.team-snapshot}
+
+## Team Snapshot
+
+- **Record:** 1-1
+- **Conference Record:** 0–0
+- **Conference:** CAA
+- **Head Coach:** Amy Mallon
+- **Last Season:** 21-11 (13-5 CAA) Lost 1st Round WNIT
+- **Preseason Poll:** Ranked 3rd in CAA 
+- **Key Returners:** Molly Lavin, Bria Watkins, Molly Rullo, Laine McGurk, Julia Garcia Roig, Emilee Jones
+- **Key Transfers/Newcomers:** Aisha Dabo
+- **Style Notes:** Fluid, motion offense with lots of cutting and slips; modern defense with lots of switching
+
+:::
+
+# Overview/Identity
+
+Drexel plays with a patient, continuity-based offensive identity built around constant movement, wide spacing, and reads out of away screens, flares, and Horns actions. They repeatedly flow from one action into the next rather than relying on isolated sets, using curls, slips, relocations, and high-low opportunities to manipulate help and create mismatches. Their 4-out 1-in spacing allows them to attack the paint through seals and post touches while keeping shooters and cutters active around the perimeter. Defensively, they are highly adaptable, mixing a matchup 2-3 with man principles, switching across positions to maintain ball pressure, and varying their help depending on matchups and post threats. Overall, Drexel wants to stay organized, patient, and difficult to disrupt on both ends by leaning on spacing, versatility, and continuity.
+
+::: {.three-keys}
+
+## Three Keys
+
+1. Stay connected through flares, away screens, and cuts.
+2. Attack switches and matchup zone through the middle.
+3. Sprint back, then punish Drexel on the offensive glass.
+
+:::
+
+# Personnel
+
+:::: {.player-card}
+
+## Aisha Dabo
+
+**Role:** Stretch 4 and rim runner
+
+**Identity:** Perimeter big within flow of offense; high volume of high post catches and seals
+
+### Tendencies
+- Looks to seal off away screens and face up in high post
+- Prefers to drive right and able to flare and spread the floor within primary spacing
+- Threat in transition as rim runner or trailer and frequently pops out of ball screens
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Be physical and try to deny catch in high post
+- Tag low off away screens and not switch against her off-ball screens 
+
+:::
+
+### Numbers
+- 52 shots as PnR roll man last season; 40/52 shots outside of paint, 35/53 points outside of paint
+- 17.6% from 3 on spot up 3s
+- 1.069 PPP in transition last season, 1.333 PPP this season (4 possessions)
+- 1.333 PPP off drives to the right vs. 0.44 PPP going left
+
+### Clip Evidence
+
+[▶ High post catch](clips/aisha_dabo/video/high_post_catch.mp4)
+
+[▶ Post face up](clips/aisha_dabo/video/post_face_up.mp4)
+
+[▶ Seal away screen](clips/aisha_dabo/video/seal_away_screen.mp4)
+
+[▶ Spread floor](clips/aisha_dabo/video/spread_floor.mp4)
+
+[▶ Transition trail](clips/aisha_dabo/video/transition_trail.mp4)
+
+::::
+
+:::: {.player-card}
+
+## Molly Lavin
+
+**Role:** Stretch 5; post player in 4-out 1-in 
+
+**Identity:** Smart player who finds open space out of post and can create advantages for herself 
+
+### Tendencies
+- Stretch big who seals when there is an advantage out of primary sets
+- Smart player who can clear post and replace drivers against man and zone
+- Makes great reads as roller; not a good passer from perimeter
+- Works towards middle of the floor on either side of post, forces shots after pickup
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Allow her to work the perimeter and increase ball pressure to force a pass
+- Closeout quickly and force her to put the ball down, throw bodies at her drives 
+
+:::
+
+### Numbers
+- 22.2% turnover rate against man in half court this season
+
+### Clip Evidence 
+
+[▶ Corner relocation](clips/molly_lavin/video/corner_relocation.mp4){.clip-button}
+
+[▶ Corner relocation 2](clips/molly_lavin/video/corner_relocation_2.mp4){.clip-button}
+
+[▶ Post middle](clips/molly_lavin/video/post_middle.mp4){.clip-button}
+
+[▶ Roll reads](clips/molly_lavin/video/roll_reads.mp4){.clip-button}
+
+[▶ Turnover](clips/molly_lavin/video/turnover.mp4){.clip-button}
+
+::::
+
+:::: {.player-card}
+
+## Bria Watkins
+
+**Role:** Physical transition forward  
+
+**Identity:** Dynamic forward with a post game and ability to attack from perimeter
+
+### Tendencies
+- Mostly starts possessions in corner setting flares as primary action
+- Seals against mismatches (Horns shuffle) and biggest threat running in transition
+- Early seals, shot fake/jab + stampede from perimeter
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- No switch when she sets flares, low tag with big
+- Stay down on her shot fakes and jabs and keep her in front 
+
+:::
+
+### Numbers
+- 1.167 PPP in transition last season
+- 1.000 PPP off spot ups last season
+- 47% off catch and shoot jumpers last year (8/13 off wing 3 pointers)
+
+### Clip Evidence
+
+[▶ Corner flare](clips/bria_watkins/video/corner_flare.mp4){.clip-button}
+
+[▶ Horns shuffle seal](clips/bria_watkins/video/horns_shuffle_seal.mp4){.clip-button}
+
+[▶ Shot fake](clips/bria_watkins/video/shot_fake.mp4){.clip-button}
+
+[▶ Transition attack](clips/bria_watkins/video/transition_attack.mp4){.clip-button}
+::::
+
+:::: {.player-card}
+
+## Molly Rullo
+
+**Role:** Primary cutter within motion
+
+**Identity:** Physical guard who cuts off-ball and creates post advantages from weakside 
+
+### Tendencies:
+- Can play at all 3 levels and loves to cut across middle of the floor off away screens
+- Very smart cutter off-ball and very patient off the catch
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Send cautious double to her and look for swipes from weakside in the post
+- Deny cuts to the middle of the floor with screener's defender 
+
+:::
+
+### Numbers
+- 17% of total cut possessions last year (3rd on team); 26% of her own possessions were cuts
+- 0.918 PPP last season off cuts
+- Only 15 possessions, but 27% TO rate last season off post ups
+- Shot 38.2% off catch and shoot 3s last season
+
+### Clip Evidence
+
+[▶ Backdoor basket cut](clips/molly_rullo/video/backdoor_basket_cut.mp4){.clip-button}
+
+[▶ Backdoor basket cut 2](clips/molly_rullo/video/backdoor_basket_cut_2.mp4){.clip-button}
+
+[▶ Middle cut](clips/molly_rullo/video/middle_cut.mp4){.clip-button}
+
+[▶ Middle slip](clips/molly_rullo/video/middle_slip.mp4){.clip-button}
+
+[▶ Patient catch](clips/molly_rullo/video/patient_catch.mp4){.clip-button}
+
+::::
+
+:::: {.player-card}
+
+## Laine McGurk
+
+**Role:** Primary scorer and 3-level threat
+
+**Identity:** Floor spreader when off-ball; biggest threat to score when on-ball
+
+### Tendencies:
+- Mostly in weakside corner for spot-up 3s within offense; also out of punch action for big
+- Primary receiver of touch flare ATO
+- Attacks and cuts to her right (works to spin back middle when cutting left)
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Be physical against middle and basket cuts and keep track of her at all time
+- Trail tightly on flares and keep in front with tags
+
+:::
+
+### Numbers
+- 2nd leading scorer last season, took 2nd most shots (1st for both this season)
+- 152 3 pointers, 120 midrange jumpers, 97 paint shots last season
+- 39.2% midrange, 57.7% in the paint, 32.2% from 3 (shooting splits)
+- Shot 35.6% off catch and shoot 3s last season
+- 40/50 drivers going right last year with 0.925 PPP
+
+### Clip Evidence
+
+[▶ Barkley action](clips/laine_mcgurk/video/barkley_action.mp4){.clip-button}
+
+[▶ Corner spacer](clips/laine_mcgurk/video/corner_spacer.mp4){.clip-button}
+
+[▶ Right hand post](clips/laine_mcgurk/video/right_hand_post.mp4){.clip-button}
+
+[▶ Touch flare ATO](clips/laine_mcgurk/video/touch_flare_ato.mp4){.clip-button}
+
+::::
+
+## Julia Garcia Roig
+
+**Role:** Primary ballhandler
+
+**Identity:** Quickest guard on the floor who loves to attack paint
+
+### Tendencies:
+- Quick first step and possession ender late in shot clock after primary sets
+- Empty corner PnR at times with her as ballhandler
+- Prefers going left and getting to left hand
+- Almost always puts the ball on the floor off catch and biggest source of paint touches in transition
+
+::: {.game-plan}
+
+### How I'd Guard Her
+- Pick up full court and don't let her gain speed
+- Force right and ice ball screens set for her going that direction
+
+:::
+
+### Numbers
+- 67/94 shot attempts last season were at the rim
+- Shot 73% at the rim on 15 shots going left, 20% going right on 5 shots
+- 0.816 PPP in transition in 2025-26
+
+### Clip Evidence
+
+[▶ 77 going left](clips/julia_garcia_roig/video/77_going_left.mp4){.clip-button}
+
+[▶ Empty corner PnR](clips/julia_garcia_roig/video/empty_corner_pnr.mp4){.clip-button}
+
+[▶ Late-clock stampede](clips/julia_garcia_roig/video/late_clock_stampede.mp4){.clip-button}
+
+[▶ Transition paint touch](clips/julia_garcia_roig/video/transition_paint_touch.mp4){.clip-button}
+
+::::
+
+# Offense
+
+:::: {.concept-card}
+
+## 1. Flares and away screens as motion offense
+
+**What They Do:**
+Run motion offense with constant cutting and paint shows through away and flare screens.
+
+### How They Do It
+
+- 4-out 1-in spacing with pass and screen away and contant guard rotation to continue flow
+- Bigs work within the actions and have choices to seal in middle of the floor or set continuous screens 
+
+::: {.game-plan}
+
+### How I'd Defend It
+
+- High deny with screener's defender against away screens to stop cuts across middle of the floor
+- Work to stay home and go under flare screens to prevent wraps to the basket
+
+:::
+
+### Clip Evidence
+
+[▶ Clip 1](clips/drexel_offense_1/video/1.mp4){.clip-button}
+
+[▶ Clip 2](clips/drexel_offense_1/video/2.mp4){.clip-button}
+
+[▶ Clip 3](clips/drexel_offense_1/video/3.mp4){.clip-button}
+
+[▶ Clip 4](clips/drexel_offense_1/video/4.mp4){.clip-button}
+
+[▶ Clip 5](clips/drexel_offense_1/video/5.mp4){.clip-button}
+
+[▶ Clip 6](clips/drexel_offense_1/video/6.mp4){.clip-button}
+
+[▶ Clip 7](clips/drexel_offense_1/video/7.mp4){.clip-button}
+
+[▶ Clip 8](clips/drexel_offense_1/video/8.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 2. 4-out 1-in spacing with middle seals against mismatches
+
+**What They Do:**
+Rotate their bigs in and out of the paint to find advantageous mismatches 
+
+**How They Do It:**
+- Work out of their motion offense with all 5 players setting screens and cutting
+- Keep paint open to find mismatches and bigs fill the space and go to work
+
+::: {.game-plan}
+
+**How I'd Defend It:**
+- Show quick tag against off-ball screens and only switch when absolutely necessary
+- Be physical and push bigs further from basket to prevent advantageous catches
+
+:::
+
+### Clip Evidence
+
+[▶ Clip 1](clips/drexel_offense_2/video/1.mp4){.clip-button}
+
+[▶ Clip 2](clips/drexel_offense_2/video/2.mp4){.clip-button}
+
+[▶ Clip 3](clips/drexel_offense_2/video/3.mp4){.clip-button}
+
+[▶ Clip 4](clips/drexel_offense_2/video/4.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 3. Horns as primary set structure
+
+**What They Do:**
+Majority of their ATOs and half court sets evolve from Horns
+
+**How They Do It:**
+- Position two bigs to fill both elbows, formulate actions for high-low and perimeter looks
+- Run simultaneous actions on both sides of floor to confuse defense and find advantages for their attackers
+
+::: {.game-plan}
+
+**How I'd Defend It:**
+- Maintain gap help principles and off-ball screen coverages to prevent paint touches and catch and shoot 3s
+
+:::
+
+### Clip Evidence
+
+[▶ Clip 1](clips/drexel_offense_3/video/1.mp4){.clip-button}
+
+[▶ Clip 2](clips/drexel_offense_3/video/2.mp4){.clip-button}
+
+[▶ Clip 3](clips/drexel_offense_3/video/3.mp4){.clip-button}
+
+[▶ Clip 4](clips/drexel_offense_3/video/4.mp4){.clip-button}
+
+::::
+
+# Defense
+
+:::: {.concept-card}
+
+## 1. Flexible matchup 2-3
+
+**What They Do:**
+Play out of matchup 2-3 that confuses offenses regarding structure
+
+**How They Do It:**
+- Set up in a 2-3 and make sure every defender is matched up
+- Communicate effectively on off-ball screens to diminish their impact and force cuts into set help
+
+::: {.game-plan}
+
+**How I'd Attack It:**
+- Try to overload sides of the floor to create open space for shooters
+- Find 1v1 matchups out of spread action in middle of the floor to attack lack of help
+
+:::
+
+### Clip Evidence
+
+[▶ Clip 1](clips/drexel_defense_1/video/1.mp4){.clip-button}
+
+[▶ Clip 2](clips/drexel_defense_1/video/2.mp4){.clip-button}
+
+[▶ Clip 3](clips/drexel_defense_1/video/3.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 2. Switch everything to maintain ball pressure
+
+**What They Do:**
+Switch everything on and off ball to keep pressure on offense
+
+**How They Do It:**
+- Straight up switching all positions against ball screens with defenders a step below the level
+- Maintain low positioning against off-ball screens and communicate to keep movement clean
+
+::: {.game-plan}
+
+**How I'd Attack It:**
+- Look for flares to open space on the backside of staggers and away screens
+- Find mismatches off the switch and look to slip ball screens
+
+:::
+
+### Clip Evidence
+
+[▶ Clip 1](clips/drexel_defense_2/video/1.mp4){.clip-button}
+
+[▶ Clip 2](clips/drexel_defense_2/video/2.mp4){.clip-button}
+
+[▶ Clip 3](clips/drexel_defense_2/video/3.mp4){.clip-button}
+
+::::
+
+:::: {.concept-card}
+
+## 3. Conservative help & late doubles in the post
+
+**What They Do:**
+Slowly creep over against post touches and send unexpected doubles
+
+**How They Do It:**
+- Don't fully commit off the catch and wait for ball to be put down
+- Play 1v2 on weakside and sprint over to pressure a pick up
+
+::: {.game-plan}
+
+**How I'd Attack It:**
+- Be very cautious in the post and keep head on swivel
+- Rotate guard around the post to maintain weakside spacing and have a pass available to work out of rotation
+
+:::
+
+### Clip Evidence
+
+[▶ Clip 1](clips/drexel_defense_3/video/1.mp4){.clip-button}
+
+[▶ Clip 2](clips/drexel_defense_3/video/2.mp4){.clip-button}
+
+[▶ Clip 3](clips/drexel_defense_3/video/3.mp4){.clip-button}
+
+[▶ Clip 4](clips/drexel_defense_3/video/4.mp4){.clip-button}
+
+::::
+
+# Common Actions/ATOs
+- Horns out stagger high-low [▶ Horns out stagger high-low](clips/drexel_atos_special_situations/video/horns_out_stagger_high_low.mp4){.clip-button}
+- Stack out touch flare [▶ Stack out touch flare](clips/drexel_atos_special_situations/video/stack_out_touch_flare.mp4){.clip-button}
+- High horns [▶ High horns](clips/drexel_atos_special_situations/video/high_horns.mp4){.clip-button}
+- Elbow out away [▶ Elbow out away](clips/drexel_atos_special_situations/video/elbow_out_away.mp4){.clip-button}
+- Delay flare - wide pin [▶ Delay flare wide pin](clips/drexel_atos_special_situations/video/delay_flare_wide_pin.mp4){.clip-button}
+- Horns chest - follow action [▶ Horns chest follow](clips/drexel_atos_special_situations/video/horns_chest_follow.mp4){.clip-button}
+- Horns double flare [▶ Horns double flare](clips/drexel_atos_special_situations/video/horns_double_flare.mp4){.clip-button}
+- Horns away flare high-low [▶ Horns away flare high-low](clips/drexel_atos_special_situations/video/horns_away_flare_highlow.mp4){.clip-button}
+- Horns out shuffle [▶ Horns out shuffle](clips/drexel_atos_special_situations/video/horns_out_shuffle.mp4){.clip-button}
+- 77 early slip - high low [▶ 77 early slip](clips/drexel_atos_special_situations/video/77_early_slip.mp4){.clip-button}
+- Flare slip punch - wide pin [▶ Flare slip punch high-low](clips/drexel_atos_special_situations/video/flare_slip_punch_highlow.mp4){.clip-button}
+- Double twirl shuffle high-low [▶ Double twirl shuffle high-low](clips/drexel_atos_special_situations/video/double_twirl_shuffle_highlow.mp4){.clip-button}
+- Double flare - empty corner PnR [▶ Double flare empty corner PnR](clips/drexel_atos_special_situations/video/double_flare_empty_corner_PnR.mp4){.clip-button}
+
+# Special Situations
+- Cross elevator punch SLOB [▶ Cross elevator punch](clips/drexel_atos_special_situations/video/cross_elevator_punch.mp4){.clip-button}
+- Gut pin touch flare SLOB [▶ Gut pin touch flare](clips/drexel_atos_special_situations/video/gut_pin_touch_flare.mp4){.clip-button}
+- Cross screen BLOB [▶ Cross screen BLOB](clips/drexel_atos_special_situations/video/cross_screen_blob.mp4){.clip-button}
+- Side pin - gut STS SLOB [▶ Side pin gut STS](clips/drexel_atos_special_situations/video/side_pin_gut_STS.mp4){.clip-button}
+- Double curl SLOB [▶ Double curl](clips/drexel_atos_special_situations/video/double_curl.mp4){.clip-button}
+- Elbow stack double curl BLOB [▶ Elbow stack double curl](clips/drexel_atos_special_situations/video/elbow_stack_double_curl.mp4){.clip-button}
+- Zipper shuffle SLOB [▶ Zipper shuffle](clips/drexel_atos_special_situations/video/zipper_shuffle.mp4){.clip-button}
+- Spread action -- top isos + top PnR toward double gap at the end of games with Roig [▶ Top iso Roig](clips/drexel_atos_special_situations/video/top_iso_roig.mp4){.clip-button} & [▶ Top PnR Roig](clips/drexel_atos_special_situations/video/top_PnR_roig.mp4){.clip-button}
+
+...
+
+# Final Three Keys
+1. Stay connected through flares, away screens, and cuts.
+2. Attack switches and matchup zone through the middle.
+3. Sprint back, then punish Drexel on the offensive glass.
+...
+
+
