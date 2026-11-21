@@ -1,0 +1,853 @@
+---
+title: "Old Dominion Monarchs Scouting Report"
+format:
+  dashboard:
+    theme: cosmo
+    orientation: rows
+    scrolling: true
+    expandable: true
+    embed-resources: true
+---
+
+<style>
+:root {
+  --odu-navy: #0b1f3a;
+  --odu-blue: #6aa9d8;
+  --odu-gold: #f4b83f;
+  --odu-soft: #eef5fb;
+  --ink: #172033;
+  --muted: #667085;
+  --bg: #f4f6f8;
+  --panel: #ffffff;
+  --border: #d9e1ea;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.dashboard-page {
+  padding-left: 0.9rem !important;
+  padding-right: 0.9rem !important;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: var(--odu-navy) !important;
+  border-bottom: 3px solid var(--odu-gold);
+}
+
+.navbar .navbar-title,
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link.active {
+  color: var(--odu-gold) !important;
+  font-weight: 700;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(15,23,42,.06);
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--odu-navy), #16385f);
+  color: white;
+  font-weight: 700;
+  border-bottom: 3px solid var(--odu-blue);
+}
+
+.player-card {
+  border-left: 5px solid var(--odu-blue);
+}
+
+.concept-card {
+  border-top: 5px solid var(--odu-blue);
+}
+
+.player-meta,
+.concept-summary {
+  background: #f8fafc;
+  border-left: 4px solid var(--odu-gold);
+  padding: .85rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.game-plan {
+  background: var(--odu-soft);
+  border-left: 4px solid var(--odu-navy);
+  padding: .85rem 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.keys-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+}
+
+.key-item {
+  background: #fffaf0;
+  border: 1px solid #f2d38c;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.key-number {
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--odu-navy);
+  color: var(--odu-gold);
+  font-weight: 800;
+  margin-right: .45rem;
+}
+
+.clip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: .5rem;
+}
+
+.clip-button {
+  display: inline-block;
+  padding: .48rem .72rem;
+  border: 1px solid #c7d7e6;
+  border-radius: 8px;
+  background: #f7fbff;
+  color: var(--odu-navy) !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .15s ease-in-out;
+}
+
+.clip-button:hover {
+  transform: translateY(-1px);
+  background: #eaf4fc;
+  border-color: var(--odu-blue);
+  text-decoration: none;
+}
+
+.action-list {
+  display: grid;
+  gap: .55rem;
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: .65rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.action-name {
+  font-weight: 650;
+  color: var(--odu-navy);
+}
+
+h4 {
+  margin-top: 1rem;
+  color: var(--odu-navy);
+}
+
+@media (max-width: 900px) {
+  .snapshot-grid,
+  .keys-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-page {
+    padding-left: .4rem !important;
+    padding-right: .4rem !important;
+  }
+}
+</style>
+
+# Overview
+
+## Row {.flow}
+
+:::: {.card title="Team Snapshot" fill="false"}
+
+<div class="snapshot-grid">
+<div>
+
+**Record:** 3-1  
+**Conference Record:** 0–0  
+**Conference:** Sun Belt  
+**Head Coach:** DeLisha Milton-Jones  
+
+</div>
+<div>
+
+**Last Season:** 18-14 (9-9 Sun Belt)  
+**Preseason Poll:** Ranked 6th in Sun Belt  
+**Key Returners:** Riley Stack, Dalanna Carter  
+**Key Transfers/Newcomers:** Mia Davis, Vanessa Sepulveda, Trinity Vance, Shadasia Brackens  
+
+</div>
+</div>
+
+**Style Notes:** Inside-out offense with talented bigs and versatile guards around them; traditional play style and drive and kick flow to create spontaneous advantages.
+
+::::
+
+## Row {.flow}
+
+:::: {.card title="Overview/Identity" fill="false"}
+
+Old Dominion plays through an inside-out identity built around Riley Stack’s high-post presence, downhill creation from Dalanna Carter and Trinity Vance, and consistent movement around their bigs. They use 4-out 1-in spacing, high-post fills, weakside exchanges, empty-corner ball screens, and early transition attacks to create paint touches before flowing into secondary action. Their guards can create off the bounce, while Stack and Brackens provide screening, sealing, rim-running, and face-up options that keep the offense connected. Defensively, Old Dominion leans heavily on Stack as a rim protector in deep drop, mixes in 1-2-1-1 pressure back to 2-3, and plays with strong perimeter denial while collapsing aggressively from the weakside on paint touches. Their identity is built around size at the rim, pressure around the perimeter, and forcing opponents to make quick decisions against changing coverages.
+
+::::
+
+## Row {.flow}
+
+:::: {.card .three-keys title="Three Keys" fill="false"}
+
+<div class="keys-grid">
+
+<div class="key-item"><span class="key-number">1</span><strong>Stop early paint touches from Carter and Vance and keep Stack from establishing easy high-post catches.</strong></div>
+
+<div class="key-item"><span class="key-number">2</span><strong>Attack Stack in ball screens, use the space in deep drop, and force her to defend away from the rim.</strong></div>
+
+<div class="key-item"><span class="key-number">3</span><strong>Stay patient against pressure and weakside collapse, maintain spacing, and keep the ball moving to force rotations.</strong></div>
+
+</div>
+
+::::
+
+
+# Personnel
+
+## Row {.flow}
+
+:::: {.card .player-card title="Shadasia Brackens" fill="false"}
+
+::: {.player-meta}
+
+**Role:** Stretch big
+
+**Identity:** Power forward who can score at all three levels and run the floor in transition.
+
+:::
+
+#### Tendencies
+
+- Loves to attack right from the perimeter
+- Used out of pop + attack in BLOB
+- Will look to spin out of her drives to get to jumper
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Force drives to the left off high post catch or perimeter pop
+- Maintain ball pressure to get ball on the floor and stunt attacks from high post
+
+:::
+
+#### Numbers
+
+- Only 3 spot-up 3s taken this season
+- 12 drives right vs. 1 drive left (0.833 PPP on right drives)
+- 42% on dribble jumpers (43% TS%)
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Attack right 2](<clips/Old Dominion Scouting Report Clips/shadasia_brackens/video/attack_right_2.mp4>){.clip-button}
+[▶ BLOB pop](<clips/Old Dominion Scouting Report Clips/shadasia_brackens/video/blob_pop.mp4>){.clip-button}
+[▶ Jumper right 2](<clips/Old Dominion Scouting Report Clips/shadasia_brackens/video/jumper_right_2.mp4>){.clip-button}
+[▶ Jumper right](<clips/Old Dominion Scouting Report Clips/shadasia_brackens/video/jumper_right.mp4>){.clip-button}
+[▶ Spin jumper](<clips/Old Dominion Scouting Report Clips/shadasia_brackens/video/spin_jumper.mp4>){.clip-button}
+[▶ Spin right](<clips/Old Dominion Scouting Report Clips/shadasia_brackens/video/spin_right.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Riley Stack" fill="false"}
+
+::: {.player-meta}
+
+**Role:** Primary post 5 who can stretch the floor
+
+**Identity:** Versatile big who is physical in low post and works well around her guards from high post
+
+:::
+
+#### Tendencies
+
+- Catches in high post or low block similar to Brackens
+- Favors left side off attacks from FT line
+- Screen + seals off-ball especially in middle of the floor and patient in her keeps
+- Hard rolls off empty-corner ball screen but patient depending on coverage
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Be physical and front when positioned under the basket
+- Force right off high post catch and maintain high hands
+
+:::
+
+#### Numbers
+
+- 13 post-ups with 0.923 PPP
+- 7/9 drives to her left with 1.714 PPP
+- 36/44 FGA within 4 feet of the rim
+- Defensively, 1.727 PPP in pick and roll with Stack on the floor
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Hard roll](<clips/Old Dominion Scouting Report Clips/riley_stack/video/hard_roll.mp4>){.clip-button}
+[▶ High post catch](<clips/Old Dominion Scouting Report Clips/riley_stack/video/high_post_catch.mp4>){.clip-button}
+[▶ Left drive 2](<clips/Old Dominion Scouting Report Clips/riley_stack/video/left_drive_2.mp4>){.clip-button}
+[▶ Left drive](<clips/Old Dominion Scouting Report Clips/riley_stack/video/left_drive.mp4>){.clip-button}
+[▶ Midrange jumper](<clips/Old Dominion Scouting Report Clips/riley_stack/video/midrange_jumper.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Trinity Vance" fill="false"}
+
+::: {.player-meta}
+
+**Role:** Spot-up shooter and secondary creator
+
+**Identity:** Movement shooter who can spread the floor and get downhill with ball in her hands
+
+:::
+
+#### Tendencies
+
+- Primary initiator offensively in transition - works to get early paint touch, great at attacking closeouts
+- Incredibly quick first step going right especially out of ball screens
+- Normally secondary initiator (starts in corner, lifts into ball reversal)
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Over and trailing everything to force her off the line
+- Do not help in gap under the basket and keep track of her on the weakside
+
+:::
+
+#### Numbers
+
+- 1.059 PPP off spot-up play type
+- 37% 3-point shooter this season (4/11)
+- 0.419 PPP as P&R ball handler on 31 possessions
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Ball screen](<clips/Old Dominion Scouting Report Clips/trinity_vance/video/ball_screen.mp4>){.clip-button}
+[▶ Closeout attack](<clips/Old Dominion Scouting Report Clips/trinity_vance/video/closeout_attack.mp4>){.clip-button}
+[▶ Primary initiator](<clips/Old Dominion Scouting Report Clips/trinity_vance/video/primary_initiator.mp4>){.clip-button}
+[▶ Secondary reversal](<clips/Old Dominion Scouting Report Clips/trinity_vance/video/secondary_reversal.mp4>){.clip-button}
+[▶ Spot-up shot](<clips/Old Dominion Scouting Report Clips/trinity_vance/video/spot_up_shot.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Mia Davis" fill="false"}
+
+::: {.player-meta}
+
+**Role:** Traditional forward with great footwork
+
+**Identity:** Physical forward and driver from midrange
+
+:::
+
+#### Tendencies
+
+- Great fundamentals and footwork in the low post
+- Corner spacer and decent 3-point shooter
+- Not afraid to run in transition and bring the ball up as point forward
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Be physical in the low post and box out from perimeter
+
+:::
+
+#### Numbers
+
+- 1/6 on spot-up 3s this season
+- Only 11/27 in the paint (41%) - out of control, forces some shots
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Corner spacer](<clips/Old Dominion Scouting Report Clips/mia_davis/video/corner_spacer.mp4>){.clip-button}
+[▶ Footwork 2](<clips/Old Dominion Scouting Report Clips/mia_davis/video/footwork_2.mp4>){.clip-button}
+[▶ Footwork](<clips/Old Dominion Scouting Report Clips/mia_davis/video/footwork.mp4>){.clip-button}
+[▶ Low post](<clips/Old Dominion Scouting Report Clips/mia_davis/video/low_post.mp4>){.clip-button}
+[▶ Point forward](<clips/Old Dominion Scouting Report Clips/mia_davis/video/point_forward.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Dalanna Carter" fill="false"}
+
+::: {.player-meta}
+
+**Role:** Primary ballhandler and versatile scorer
+
+**Identity:** Downhill attacker who is very patient in the midrange and pushes ball in transition
+
+:::
+
+#### Tendencies
+
+- Can be a corner spacer when off-ball and a great shooter
+- Most dynamic and versatile ballhandler, great attacker downhill
+- Creative and patient against weakside help
+- Not great against pressure - some ill-advised passes out of backcourt so far this season
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Over-drop in ball screens, maintain backside pressure and keep Cat attached to roller
+- Pick up full court to stop early paint touches and force offense to slow down
+
+:::
+
+#### Numbers
+
+- 0.5 PPP as PnR ballhandler as 10 possessions
+- 5/18 within 4 feet of rim
+- 4/10 from 3 through 5 games
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Corner spacer 2](<clips/Old Dominion Scouting Report Clips/dalanna_carter/video/corner_spacer_2.mp4>){.clip-button}
+[▶ Corner spacer](<clips/Old Dominion Scouting Report Clips/dalanna_carter/video/corner_spacer.mp4>){.clip-button}
+[▶ Creativity](<clips/Old Dominion Scouting Report Clips/dalanna_carter/video/creativity.mp4>){.clip-button}
+[▶ Downhill attack 2](<clips/Old Dominion Scouting Report Clips/dalanna_carter/video/downhill_attack_2.mp4>){.clip-button}
+[▶ Pressure turnover](<clips/Old Dominion Scouting Report Clips/dalanna_carter/video/pressure_turnover.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Vanessa Sepulveda" fill="false"}
+
+::: {.player-meta}
+
+**Role:** Movement shooter
+
+**Identity:** Great perimeter spacer and off-ball cutter
+
+:::
+
+#### Tendencies
+
+- Shooter off spot-ups and midrange off the dribble
+- Great footwork off catch and shoot popping off inverted screens
+- Smart player off shallow and loop cuts and works to find advantageous spot-up passing lanes
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Keep head on swivel, top lock off off-ball screens to limit movement from cuts
+
+:::
+
+#### Numbers
+
+- 3/13 from 3 but none of them low shot quality (only 40 possessions so far this season)
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Cut around ball](<clips/Old Dominion Scouting Report Clips/vanessa_sepulveda/video/cut_around_ball.mp4>){.clip-button}
+[▶ Inverted pop](<clips/Old Dominion Scouting Report Clips/vanessa_sepulveda/video/inverted_pop.mp4>){.clip-button}
+[▶ Shallow cut 2](<clips/Old Dominion Scouting Report Clips/vanessa_sepulveda/video/shallow_cut_2.mp4>){.clip-button}
+[▶ Shallow cut](<clips/Old Dominion Scouting Report Clips/vanessa_sepulveda/video/shallow_cut.mp4>){.clip-button}
+[▶ Shooter off dribble](<clips/Old Dominion Scouting Report Clips/vanessa_sepulveda/video/shooter_off_dribble.mp4>){.clip-button}
+
+:::
+
+::::
+
+
+# Offense
+
+## Row {.flow}
+
+:::: {.card .concept-card title="High post fills + catches with flow around bigs" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** 4-out 1-in spacing with Stack filling at FT line and perimeter action around her
+
+:::
+
+#### How They Do It
+
+- Big exchanges with Carter and Vance initiating paint touches with drive and kick
+- Off-ball screens with Stack seals and weakside corner exchanges/lifts
+
+::: {.game-plan}
+
+#### How I’d Defend It
+
+- Maintain high ball pressure and denials against guards to make them work for their downhill attacks
+- Stay physical against Stack high post catches and maintain gap principles when they get paint touches
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Clip 1](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_1/video/1.mp4>){.clip-button}
+[▶ Clip 2](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_1/video/2.mp4>){.clip-button}
+[▶ Clip 3](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_1/video/3.mp4>){.clip-button}
+[▶ Clip 4](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_1/video/4.mp4>){.clip-button}
+[▶ Clip 5](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_1/video/5.mp4>){.clip-button}
+[▶ Clip 6](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_1/video/6.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Early paint touches + rim runs with bigs" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Work to get Carter and Vance up the floor off makes and misses before defense gets set
+
+:::
+
+#### How They Do It:
+
+- Send Brackens, Stack as trackers to rim run and seal alongside guards
+- Try to work early punch action or stampede early in the shot clock to force defense into rotation and gain advantage before halfcourt entry
+
+::: {.game-plan}
+
+#### How I’d Defend It
+
+- Make sure we have at least two back after shot goes up offensively to quarterback the defense getting set
+- Deny or front seals in the paint within first 2-3 seconds of possession to force possession to slow down
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Clip 1](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_2/video/1.mp4>){.clip-button}
+[▶ Clip 2](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_2/video/2.mp4>){.clip-button}
+[▶ Clip 3](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_2/video/3.mp4>){.clip-button}
+[▶ Clip 4](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_2/video/4.mp4>){.clip-button}
+[▶ Clip 5](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_2/video/5.mp4>){.clip-button}
+[▶ Clip 6](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_2/video/6.mp4>){.clip-button}
+[▶ Clip 7](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_2/video/7.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Empty corner ball screens for Vance and Carter" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Use their two best facilitators in tandem to flow into empty corner PnR and find baseline attacks
+
+:::
+
+#### How They Do It:
+
+- Work out of primary halfcourt principles (4-out 1-in, Stack high post) in first half of shot clock to try to work the paint
+- Lift weakside corner with secondary ballhandler and flow into empty corner or regular wing PnR later in shot clock
+
+::: {.game-plan}
+
+#### How I’d Defend It
+
+- 1-4 switch to maintain ball pressure on the two ballhandlers and load up the box against baseline attack depending on shooter positions
+- Deny catches on everything and try to force secondary ballhandler backdoor to mess up their desired action
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Clip 1](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/1.mp4>){.clip-button}
+[▶ Clip 2](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/2.mp4>){.clip-button}
+[▶ Clip 3](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/3.mp4>){.clip-button}
+[▶ Clip 4](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/4.mp4>){.clip-button}
+[▶ Clip 5](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/5.mp4>){.clip-button}
+[▶ Clip 6](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/6.mp4>){.clip-button}
+[▶ Clip 7](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/7.mp4>){.clip-button}
+[▶ Clip 8](<clips/Old Dominion Scouting Report Clips/old_dominion_offense_3/video/8.mp4>){.clip-button}
+
+:::
+
+::::
+
+
+# Defense
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Deep drop coverage with Stack out of ball screens" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Stack stationed as rim protector, basically plays 1v2 out of deep drop coverage
+
+:::
+
+#### How They Do It:
+
+- Maintain ball pressure against screens and force ballhandler into Stack’s length and size
+- Have her play 1v2 or peel switch depending on situation but leave midrange mostly open
+
+::: {.game-plan}
+
+#### How I’d Attack It
+
+- Keep defender on hip and take what defense gives (should be plenty of good midrange looks against over-drop)
+- Stay wide to open pocket pass for roller and force Stack to move in space
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Clip 1](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/1.mp4>){.clip-button}
+[▶ Clip 2](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/2.mp4>){.clip-button}
+[▶ Clip 3](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/3.mp4>){.clip-button}
+[▶ Clip 4](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/4.mp4>){.clip-button}
+[▶ Clip 5](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/5.mp4>){.clip-button}
+[▶ Clip 6](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/6.mp4>){.clip-button}
+[▶ Clip 7](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/7.mp4>){.clip-button}
+[▶ Clip 8](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_1/video/8.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="1-2-1-1 full court back to 2-3; gap mostly comes from Stack roaming in the paint as rim protector" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Mix in a 1-2-1-1 full court zone press and use Stack to roam off her man instead of playing full team gap help
+
+:::
+
+#### How They Do It:
+
+- Press off dead balls or made free throws unexpectedly to catch opponent off guard; trap first pass and/or first entry into frontcourt
+- Give Stack freedom to roam when her man is on perimeter and rotate around her to protect rim effectively
+
+::: {.game-plan}
+
+#### How I’d Attack It
+
+- Stay patient against the press and look to fill middle and get down the floor
+- Use Cat in space and as tracker to attack off the catch and force rotation from smaller defenders around Stack
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Clip 1](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_2/video/1.mp4>){.clip-button}
+[▶ Clip 2](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_2/video/2.mp4>){.clip-button}
+[▶ Clip 3](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_2/video/3.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Aggressive weakside collapse on paint touches but solid perimeter denials with disciplined recoveries" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Varying coverages depending matchups but show off-ball pressure with heavy baseline gap presence
+
+:::
+
+#### How They Do It:
+
+- Don’t worry about the weakside and maintain principles of blocking off the paint and forcing kickouts
+- Deny the catch above the FT line and force backdoor cuts into stationed big; work to reverse pivot and cut off any potential basket cuts
+
+::: {.game-plan}
+
+#### How I’d Attack It
+
+- Maintain spacing especially out of corners and keep ball popping to force next coverage and rotation
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Clip 1](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_3/video/1.mp4>){.clip-button}
+[▶ Clip 2](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_3/video/2.mp4>){.clip-button}
+[▶ Clip 3](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_3/video/3.mp4>){.clip-button}
+[▶ Clip 4](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_3/video/4.mp4>){.clip-button}
+[▶ Clip 5](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_3/video/5.mp4>){.clip-button}
+[▶ Clip 6](<clips/Old Dominion Scouting Report Clips/old_dominion_defense_3/video/6.mp4>){.clip-button}
+
+:::
+
+::::
+
+
+# Actions / ATOs
+
+## Row {.flow}
+
+:::: {.card title="Common Actions / ATOs" fill="false"}
+
+<div class="action-list">
+<div class="action-row"><span class="action-name">Corner stagger punch</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/corner_stagger_punch.mp4">▶ Corner stagger punch</a></div>
+<div class="action-row"><span class="action-name">Elbow out away double curl</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/elbow_out_away_double_curl.mp4">▶ Elbow out away double curl</a></div>
+<div class="action-row"><span class="action-name">Elbow out away zoom puch</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/elbow_out_away_zoom_puch.mp4">▶ Elbow out away zoom puch</a></div>
+<div class="action-row"><span class="action-name">High horns</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/high_horns.mp4">▶ High horns</a></div>
+<div class="action-row"><span class="action-name">Horns chest shuffle gut pin</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/horns_chest_shuffle_gut_pin.mp4">▶ Horns chest shuffle gut pin</a></div>
+<div class="action-row"><span class="action-name">Horns out high low</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/horns_out_high_low.mp4">▶ Horns out high low</a></div>
+<div class="action-row"><span class="action-name">Iverson gut pin</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/iverson_gut_pin.mp4">▶ Iverson gut pin</a></div>
+<div class="action-row"><span class="action-name">Loop flare seal</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/loop_flare_seal.mp4">▶ Loop flare seal</a></div>
+<div class="action-row"><span class="action-name">Pistol swing ricky</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/pistol_swing_ricky.mp4">▶ Pistol swing ricky</a></div>
+<div class="action-row"><span class="action-name">Point over exit</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/point_over_exit.mp4">▶ Point over exit</a></div>
+<div class="action-row"><span class="action-name">Spread Miami</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/spread_miami.mp4">▶ Spread Miami</a></div>
+<div class="action-row"><span class="action-name">Stack PnR</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/stack_PnR.mp4">▶ Stack PnR</a></div>
+<div class="action-row"><span class="action-name">Tight punch split</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/tight_punch_split.mp4">▶ Tight punch split</a></div>
+<div class="action-row"><span class="action-name">Wedge stagger high low</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_atos/video/wedge_stagger_high_low.mp4">▶ Wedge stagger high low</a></div>
+</div>
+
+::::
+
+
+# Special Situations
+
+## Row {.flow}
+
+:::: {.card title="Special Situations" fill="false"}
+
+<div class="action-list">
+<div class="action-row"><span class="action-name">Spread high low</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/spread_high_low.mp4">▶ Spread high low</a></div>
+<div class="action-row"><span class="action-name">Stagger away seal</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/stagger_away_seal.mp4">▶ Stagger away seal</a></div>
+<div class="action-row"><span class="action-name">Stagger away zoom flip</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/stagger_away_zoom_flip.mp4">▶ Stagger away zoom flip</a></div>
+<div class="action-row"><span class="action-name">Stagger exit logo PnR</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/stagger_exit_logoPnR.mp4">▶ Stagger exit logo PnR</a></div>
+<div class="action-row"><span class="action-name">Stagger Peja</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/stagger_peja.mp4">▶ Stagger Peja</a></div>
+<div class="action-row"><span class="action-name">Stagger pin</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/stagger_pin.mp4">▶ Stagger pin</a></div>
+<div class="action-row"><span class="action-name">Stagger rip high low</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/stagger_rip_high_low.mp4">▶ Stagger rip high low</a></div>
+<div class="action-row"><span class="action-name">Triple dive</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/triple_dive.mp4">▶ Triple dive</a></div>
+<div class="action-row"><span class="action-name">Twirl exit</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/twirl_exit.mp4">▶ Twirl exit</a></div>
+<div class="action-row"><span class="action-name">Zipper punch exit</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_special/video/zipper_punch_exit.mp4">▶ Zipper punch exit</a></div>
+</div>
+
+::::
+
+## Row {.flow}
+
+:::: {.card title="Late Game" fill="false"}
+
+<div class="action-list">
+<div class="action-row"><span class="action-name">Flat top PnR</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_late_game/video/flat_top_PnR.mp4">▶ Flat top PnR</a></div>
+<div class="action-row"><span class="action-name">High post iso stack</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_late_game/video/high_post_iso_stack.mp4">▶ High post iso stack</a></div>
+<div class="action-row"><span class="action-name">Stack curl SLOB</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_late_game/video/stack_curl_slob.mp4">▶ Stack curl SLOB</a></div>
+<div class="action-row"><span class="action-name">Stagger rip SLOB</span><a class="clip-button" href="clips/Old Dominion Scouting Report Clips/old_dominion_late_game/video/stagger_rip_slob.mp4">▶ Stagger rip SLOB</a></div>
+</div>
+
+::::
+
+
+# Final Three Keys
+
+## Row {.flow}
+
+:::: {.card .three-keys title="Final Three Keys" fill="false"}
+
+<div class="keys-grid">
+
+<div class="key-item"><span class="key-number">1</span><strong>Stop early paint touches from Carter and Vance and keep Stack from establishing easy high-post catches.</strong></div>
+
+<div class="key-item"><span class="key-number">2</span><strong>Attack Stack in ball screens, use the space in deep drop, and force her to defend away from the rim.</strong></div>
+
+<div class="key-item"><span class="key-number">3</span><strong>Stay patient against pressure and weakside collapse, maintain spacing, and keep the ball moving to force rotations.</strong></div>
+
+</div>
+
+::::
+
