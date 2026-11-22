@@ -1,0 +1,1150 @@
+---
+title: "James Madison Dukes Scouting Report"
+format:
+  dashboard:
+    theme: cosmo
+    orientation: rows
+    scrolling: true
+    expandable: true
+    embed-resources: true
+---
+
+<style>
+:root {
+  --jmu-purple: #450084;
+  --jmu-deep: #2f005c;
+  --jmu-gold: #cbb677;
+  --jmu-gold-soft: #f5f0df;
+  --jmu-lilac: #f5f1fa;
+  --ink: #202332;
+  --muted: #687083;
+  --bg: #f3f4f7;
+  --panel: #ffffff;
+  --border: #e1e3e8;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.dashboard-page {
+  padding: .9rem 1rem 1.6rem !important;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: linear-gradient(110deg, var(--jmu-deep), var(--jmu-purple)) !important;
+  border-bottom: 4px solid var(--jmu-gold);
+  box-shadow: 0 4px 14px rgba(47,0,92,.18);
+}
+
+.navbar .navbar-title,
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link.active {
+  color: var(--jmu-gold) !important;
+  font-weight: 800;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 5px 18px rgba(32,35,50,.07);
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(120deg, var(--jmu-deep), var(--jmu-purple));
+  color: #fff;
+  border-bottom: 3px solid var(--jmu-gold);
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.hero-card {
+  border: none;
+  background: linear-gradient(120deg, #2f005c, #450084 58%, #5b119f);
+  color: #fff;
+}
+
+.hero-card .card-body {
+  padding: 1.25rem 1.4rem;
+}
+
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: white;
+  padding: 8px;
+  border: 2px solid var(--jmu-gold);
+}
+
+.hero-kicker {
+  color: var(--jmu-gold);
+  font-size: .76rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 1.55rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: .2rem 0 .35rem;
+}
+
+.hero-sub {
+  opacity: .92;
+  max-width: 1050px;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: .75rem;
+}
+
+.stat-tile {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--jmu-purple);
+  border-radius: 12px;
+  padding: .8rem .9rem;
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: .73rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-weight: 850;
+  margin-top: .18rem;
+}
+
+.player-card {
+  border-left: 6px solid var(--jmu-gold);
+}
+
+.concept-card {
+  border-top: 6px solid var(--jmu-purple);
+}
+
+.player-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .75rem;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: .7rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.role-text {
+  font-weight: 800;
+  color: var(--jmu-purple);
+}
+
+.player-number {
+  min-width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--jmu-purple);
+  color: var(--jmu-gold);
+  font-weight: 900;
+  font-size: 1.05rem;
+}
+
+.player-meta, .concept-summary {
+  background: var(--jmu-lilac);
+  border-left: 4px solid var(--jmu-purple);
+  border-radius: 10px;
+  padding: .85rem 1rem;
+  margin: .45rem 0 1rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.game-plan {
+  background: var(--jmu-gold-soft);
+  border-left: 4px solid var(--jmu-gold);
+  border-radius: 10px;
+  padding: .75rem 1rem;
+}
+
+.numbers-box {
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .65rem .9rem;
+}
+
+.clip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .45rem;
+}
+
+.clip-button {
+  display: inline-block;
+  padding: .46rem .68rem;
+  border-radius: 999px;
+  border: 1px solid #d7c99f;
+  background: #fffaf0;
+  color: var(--jmu-deep) !important;
+  text-decoration: none;
+  font-weight: 750;
+  font-size: .88rem;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.clip-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 9px rgba(69,0,132,.12);
+  text-decoration: none;
+}
+
+.keys-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: .85rem;
+}
+
+.key-item {
+  background: linear-gradient(180deg, #fff, #faf7ee);
+  border: 1px solid #dfd2ae;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.key-number {
+  display: inline-flex;
+  width: 1.95rem;
+  height: 1.95rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--jmu-purple);
+  color: var(--jmu-gold);
+  font-weight: 900;
+  margin-right: .45rem;
+}
+
+.action-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: .6rem;
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: .7rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fbfbfd;
+}
+
+.action-name {
+  font-weight: 800;
+  color: var(--jmu-deep);
+}
+
+.section-note {
+  color: var(--muted);
+  font-size: .91rem;
+  margin-bottom: .8rem;
+}
+
+h4 {
+  color: var(--jmu-deep);
+  font-weight: 850;
+  margin-top: .8rem;
+}
+
+@media (max-width: 950px) {
+  .snapshot-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .two-col, .keys-grid, .action-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 650px) {
+  .hero-wrap { grid-template-columns: 1fr; }
+  .hero-logo { width: 82px; height: 82px; }
+  .snapshot-grid { grid-template-columns: 1fr; }
+  .dashboard-page { padding-left: .45rem !important; padding-right: .45rem !important; }
+}
+</style>
+
+# Overview
+
+## Row {.flow}
+
+:::: {.card .hero-card fill="false"}
+
+<div class="hero-wrap">
+<img class="hero-logo" src="images/james_madison_logo.jpeg" alt="James Madison logo">
+<div><div class="hero-kicker">Opponent Scout • James Madison</div><div class="hero-title">Fast guards, flowing 4-out spacing, constant defensive pressure</div><div class="hero-sub">Built around early paint touches from Bree Robinson and Zakiya Stephenson, flexible screeners who can roll or pop, and a defense that shrinks the floor with heavy weakside gap help.</div></div>
+</div>
+
+::::
+
+## Row {.flow}
+
+:::: {.card title="Team Snapshot" fill="false"}
+
+<div class="snapshot-grid">
+  <div class="stat-tile"><div class="stat-label">Record</div><div class="stat-value">3-2</div></div>
+  <div class="stat-tile"><div class="stat-label">Conference</div><div class="stat-value">Sun Belt • 0–0</div></div>
+  <div class="stat-tile"><div class="stat-label">Head Coach</div><div class="stat-value">Sean O’Regan</div></div>
+  <div class="stat-tile"><div class="stat-label">Preseason Poll</div><div class="stat-value">Ranked 1st in Sun Belt</div></div>
+</div>
+
+**Last Season:** 26-9, Lost in 1st Round of NCAA Tournament  
+**Key Returners:** Bree Robinson, Zakiya Stephenson, Delilah Soltys, Grace McDonough  
+**Key Transfers/Newcomers:** Trinity Moore, Trynce Taylor, Ja’Quoia Jones-Brown, Maddie Leach, Kinley Lewis  
+
+**Style Notes:** Fast-paced and flowy offense that works to get perimeter movement and downhill attacks from quick, aggressive guards; dynamic and relentless defensive team who show constant pressure and connectedness.
+
+::::
+
+## Row {.flow}
+
+:::: {.card title="Overview / Identity" fill="false"}
+
+James Madison plays with pace and flow out of 4-out 1-in spacing, using perimeter movement, early empty-corner ball screens, ghost actions, and inside-out activity from a versatile group of bigs to create downhill opportunities for Bree Robinson and Zakiya Stephenson. Their guards are most dangerous when they can build momentum into the paint, while their bigs give the offense multiple answers as rim runners, hard rollers, pop threats, and low-post cutters. Defensively, JMU plays with constant pressure and connectedness: heavy weakside gap help, aggressive rotations after paint touches, mostly over-drop ball-screen coverage with show-and-recover mixed in, tight trailing off off-ball screens, and situational 1-2-1-1 full-court pressure.
+
+::::
+
+## Row {.flow}
+
+:::: {.card .three-keys title="Three Keys" fill="false"}
+
+<div class="keys-grid">
+<div class="key-item"><span class="key-number">1</span><strong>Pick up Robinson and Stephenson early and keep them from turning the corner into early paint touches.</strong></div>
+<div class="key-item"><span class="key-number">2</span><strong>Stretch their weakside gap help with spacing, skips, and quick short-roll decisions before the rotation recovers.</strong></div>
+<div class="key-item"><span class="key-number">3</span><strong>Win the screener matchup: stay attached to pop threats while staying physical on rolls, seals, and low-post cuts.</strong></div>
+</div>
+
+::::
+
+# Personnel
+
+
+## Row {.flow}
+
+:::: {.card .player-card title="Trynce Taylor #2" fill="false"}
+
+<div class="player-topline">
+<div><div class="eyebrow">ROLE</div><div class="role-text">Tough, rim-running big</div></div>
+<div class="player-number">#2</div>
+</div>
+
+::: {.player-meta}
+
+**Identity:** Plays primarily out of the low post, working from perimeter and filling lanes in transition.
+
+:::
+
+<div class="two-col">
+<div>
+
+#### Tendencies
+
+- Used out of chin/cross screens within stacked pistol set
+- Sometimes out of control, a little undisciplined and physical on offensive end
+- Horrible finisher through contact at the rim
+- Very good tracker and relocator, able to find open sapce for pocket passes
+
+</div>
+<div class="game-plan">
+
+#### How I’d Guard Her
+
+- Be physical and deny cuts to the low post off back screens
+- Stay on hip with high hands and force her to finish over the top
+
+</div>
+</div>
+
+#### Numbers
+
+<div class="numbers-box">
+
+- 14/20 from within 4 feet of the rim, 1.4 PPS
+- 0.857 PPP of 7 post-ups this season
+- 1.500 PPP in transition (rim runs)
+
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Chin Screen](<clips/clips/trynce_taylor/video/chin_screen.mp4>){.clip-button}
+[▶ Contested Layup](<clips/clips/trynce_taylor/video/contested_layup.mp4>){.clip-button}
+[▶ Rim Run](<clips/clips/trynce_taylor/video/rim_run.mp4>){.clip-button}
+[▶ Rim Run 2](<clips/clips/trynce_taylor/video/rim_run_2.mp4>){.clip-button}
+[▶ Drive Relocate](<clips/clips/trynce_taylor/video/drive_relocate.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Delilah Soltys #4" fill="false"}
+
+<div class="player-topline">
+<div><div class="eyebrow">ROLE</div><div class="role-text">Playmaking wing</div></div>
+<div class="player-number">#4</div>
+</div>
+
+::: {.player-meta}
+
+**Identity:** Wing who can attack off secondary actions and space the floor against closeouts
+
+:::
+
+<div class="two-col">
+<div>
+
+#### Tendencies
+
+- Primarily starts from weakside corner out of normal halfcourt sets
+- Lifts into perimeter DHOs or catch + stampede
+- Works out of left corner going to her right when coming off ball screen
+- Almost always sets ghost as screener, can pop or slip but not a great shooter
+
+</div>
+<div class="game-plan">
+
+#### How I’d Guard Her
+
+- Communicate through her ball screens to not get beat on slips on the backside
+- Be cautious in weakside gap when she’s positioned in the corner, don’t closeout too hard and make sure she isn’t able to touch the paint off the catch
+
+</div>
+</div>
+
+#### Numbers
+
+<div class="numbers-box">
+
+- 5/9 this season on spot-ups 3s, 7/21 total on 3s this season
+- 1.133 PPP on spot-ups
+
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Corner Lift](<clips/clips/delilah_soltys/video/corner_lift.mp4>){.clip-button}
+[▶ Catch Attack](<clips/clips/delilah_soltys/video/catch_attack.mp4>){.clip-button}
+[▶ Corner PnR](<clips/clips/delilah_soltys/video/corner_PnR.mp4>){.clip-button}
+[▶ Corner PnR 2](<clips/clips/delilah_soltys/video/corner_PnR_2.mp4>){.clip-button}
+[▶ Ghost Pop](<clips/clips/delilah_soltys/video/ghost_pop.mp4>){.clip-button}
+[▶ Ghost Slip](<clips/clips/delilah_soltys/video/ghost_slip.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Bree Robinson #11" fill="false"}
+
+<div class="player-topline">
+<div><div class="eyebrow">ROLE</div><div class="role-text">Scorer + perimeter playmaker</div></div>
+<div class="player-number">#11</div>
+</div>
+
+::: {.player-meta}
+
+**Identity:** One of the primary ballhandlers out of PnR; three-level scorer and downhill threat
+
+:::
+
+<div class="two-col">
+<div>
+
+#### Tendencies
+
+- Quick first step and gets to her spots in the midrange off kickouts
+- Use her as ghost screener out of ghost flare
+- Prefers to go left especially in transition with most drag sets coming from right wing
+- Lots of 2 dribble elbow pull-ups out of ball screens, threat going left to get to the rim if she turns the corner
+
+</div>
+<div class="game-plan">
+
+#### How I’d Guard Her
+
+- Be aggressive with the big toward the level to not allow her to turn the corner
+- Force her to the sideline against drag screens and pick up early to not let her get comfortable
+
+</div>
+</div>
+
+#### Numbers
+
+<div class="numbers-box">
+
+- 0.769 PPP on 26 possessions as PnR ballhandler
+- 4/15 outside the paint, 4/7 at the rim as PnR ballhandler
+- 1/6 in the paint on drives going left with no shots in the paint on drives going right
+
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Midrange Attack](<clips/clips/bree_robinson/video/midrange_attack.mp4>){.clip-button}
+[▶ Ghost Flare](<clips/clips/bree_robinson/video/ghost_flare.mp4>){.clip-button}
+[▶ Right Wing Drag](<clips/clips/bree_robinson/video/right_wing_drag.mp4>){.clip-button}
+[▶ Wedge Stagger](<clips/clips/bree_robinson/video/wedge_stagger.mp4>){.clip-button}
+[▶ Midrange Pullup](<clips/clips/bree_robinson/video/midrange_pullup.mp4>){.clip-button}
+[▶ Left Attack](<clips/clips/bree_robinson/video/left_attack.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Zakiya Stephenson #21" fill="false"}
+
+<div class="player-topline">
+<div><div class="eyebrow">ROLE</div><div class="role-text">Primary ballhandler</div></div>
+<div class="player-number">#21</div>
+</div>
+
+::: {.player-meta}
+
+**Identity:** Quick and shifty guard who is patient and loves getting downhill to pressure interior
+
+:::
+
+<div class="two-col">
+<div>
+
+#### Tendencies
+
+- Patient around ball screens and will take her time to find the right space to attack
+- Look for hesitation off ball screens in the middle of the paint, especially against bigger defenders
+- Similar strength with either hand, doesn’t really prefer a specfic side of the rim
+- Probably best shooter on the team with no hesitation from top off DHOs/ball screens
+- Boomerang/resets against mismatch or switches
+
+</div>
+<div class="game-plan">
+
+#### How I’d Guard Her
+
+- Ball pressure early to not let her gain speed and get downhill early in shot clock
+- Double or stunt drives from weakside against switches; avoid switching with big at all costs (jump switch out of guard-guard)
+
+</div>
+</div>
+
+#### Numbers
+
+<div class="numbers-box">
+
+- 1.051 PPP on 39 possessions as PnR ballhandler
+- 1.8 PPS, 6/10 as PnR ballhandler from 3 (5/6 from top of the key)
+- 37% 3PT shooter this season
+- 18.6% TO% on possessions derived from PnR
+
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Early Paint Touch](<clips/clips/zakiya_stephenson/video/early_paint_touch.mp4>){.clip-button}
+[▶ Ball Screen Patience](<clips/clips/zakiya_stephenson/video/ball_screen_patience.mp4>){.clip-button}
+[▶ Patience 2](<clips/clips/zakiya_stephenson/video/patience_2.mp4>){.clip-button}
+[▶ Horns Twist](<clips/clips/zakiya_stephenson/video/horns_twist.mp4>){.clip-button}
+[▶ Shooter](<clips/clips/zakiya_stephenson/video/shooter.mp4>){.clip-button}
+[▶ Boomerang](<clips/clips/zakiya_stephenson/video/boomerang.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Trinity Moore #33" fill="false"}
+
+<div class="player-topline">
+<div><div class="eyebrow">ROLE</div><div class="role-text">Stretch 5 who loves to shoot</div></div>
+<div class="player-number">#33</div>
+</div>
+
+::: {.player-meta}
+
+**Identity:** Another big who stretches the floor and loves to work from inside-out to find shots
+
+:::
+
+<div class="two-col">
+<div>
+
+#### Tendencies
+
+- Receiver of off-ball screens from perimeter to low post for seals
+- Used out of big ghost action within PnR progression to find 3s
+- Loves to pop ball screens and will not hesitate to take 3s from any spot on the floor
+- Face-up + fadeaway post player
+
+</div>
+<div class="game-plan">
+
+#### How I’d Guard Her
+
+- Lift the weakside corner against ball screens to not allow her to get up 3s (or switch her ball screens depending on matchup)
+- Pressure post catches and be physical to push her jumpers further from basket
+
+</div>
+</div>
+
+#### Numbers
+
+<div class="numbers-box">
+
+- 10 possessions, 10 3s as PnR roller this season (3/10 total, 3/6 from left wing)
+- 0.9 PPP off post-ups
+
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Big Exchange](<clips/clips/trinity_moore/video/big_exchange.mp4>){.clip-button}
+[▶ Pick And Pop](<clips/clips/trinity_moore/video/pick_and_pop.mp4>){.clip-button}
+[▶ Pick And Pop 2](<clips/clips/trinity_moore/video/pick_and_pop_2.mp4>){.clip-button}
+[▶ Post Faceup](<clips/clips/trinity_moore/video/post_faceup.mp4>){.clip-button}
+[▶ Post Fadeaway](<clips/clips/trinity_moore/video/post_fadeaway.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Grace McDonough #22" fill="false"}
+
+<div class="player-topline">
+<div><div class="eyebrow">ROLE</div><div class="role-text">Traditional low-post big</div></div>
+<div class="player-number">#22</div>
+</div>
+
+::: {.player-meta}
+
+**Identity:** Great screener who works from the perimeter similar to other bigs to find seals + low post cuts
+
+:::
+
+<div class="two-col">
+<div>
+
+#### Tendencies
+
+- Used out of pistol swing set as primary rip look
+- Able to operate on weakside and relocate out of dunker spot
+- Similar fadeaway/middle post moves to Moore
+- Great screener with contact/patience who rolls hard
+
+</div>
+<div class="game-plan">
+
+#### How I’d Guard Her
+
+- Make sure to deny low post cuts and keep her in front off ball screens
+- Put a bigger defender on her to prevent easy post touches and middle penetration
+
+</div>
+</div>
+
+#### Numbers
+
+<div class="numbers-box">
+
+- 1.125 PPP as PnR roll man, 1.000 PPP out of post-ups
+- Only taken 2 3s this season (0/2)
+- Shooting 68% within 4 feet of the rim
+
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Pistol Rip](<clips/clips/grace_mcdonough/video/pistol_rip.mp4>){.clip-button}
+[▶ Hard Roll](<clips/clips/grace_mcdonough/video/hard_roll.mp4>){.clip-button}
+[▶ Hard Roll 2](<clips/clips/grace_mcdonough/video/hard_roll_2.mp4>){.clip-button}
+[▶ Middle Post Fade](<clips/clips/grace_mcdonough/video/middle_post_fade.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .player-card title="Maddie Leach #1" fill="false"}
+
+<div class="player-topline">
+<div><div class="eyebrow">ROLE</div><div class="role-text">Secondary ballhandler/creator</div></div>
+<div class="player-number">#1</div>
+</div>
+
+::: {.player-meta}
+
+**Identity:** Bigger body who can handle the ball and run in transition off primary creators
+
+:::
+
+<div class="two-col">
+<div>
+
+#### Tendencies
+
+- Stretches the floor on the weakside and attacks closeouts after primary action
+- Used in hook back screen in UCLA set to top PnR
+- Prefers going left off ball screens and gets to her spot for elbow jumper against drop
+- Will always look to get back to her left even when attacking right
+
+</div>
+<div class="game-plan">
+
+#### How I’d Guard Her
+
+- Force right off top PnR from UCLA set, out of double gap driving lane
+- Keep big closer to the level to force her to attack + finish around size
+
+</div>
+</div>
+
+#### Numbers
+
+<div class="numbers-box">
+
+- 0.500 PPP as PnR ballhandler
+- 1/10 off spot-up 3s
+- 3/9 on mid-range jumpers, shooting 42% at the rim
+
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ Transition Handle](<clips/clips/maddie_leach/video/transition_handle.mp4>){.clip-button}
+[▶ Transition Handle 2](<clips/clips/maddie_leach/video/transition_handle_2.mp4>){.clip-button}
+[▶ Floor Spacer](<clips/clips/maddie_leach/video/floor_spacer.mp4>){.clip-button}
+[▶ Secondary Creator](<clips/clips/maddie_leach/video/secondary_creator.mp4>){.clip-button}
+[▶ Right Spin](<clips/clips/maddie_leach/video/right_spin.mp4>){.clip-button}
+
+:::
+
+::::
+
+# Offense
+
+<div class="section-note">Core offensive identity concepts. Clips below are grouped by the exact concept buckets from the film study.</div>
+
+
+## Row {.flow}
+
+:::: {.card .concept-card title="4-out 1-in spacing with perimeter motion and attacks" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** 4-out 1-in spacing with different action looks including big exchange, perimeter DHOs + stampede, and low post seals
+
+:::
+
+<div class="two-col">
+<div>
+
+#### How They Do It
+
+- Primary spacing consists of weakside dunker spot filled with ball screens or drive + kick depending on lineup/matchups
+- Big can roam around the drives or set off-ball screens from perimeter for teammates for dives
+
+</div>
+<div class="game-plan">
+
+#### How I’d Defend It
+
+- Stay disciplined and maintain connectedness around the perimeter, maintain communication especially against perimeter actions
+- Keep Cat at the level of ball screens and stunt rollers/cutters off non-shooters
+
+</div>
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ 1](<clips/clips/jmu_offense_1/video/1.mp4>){.clip-button}
+[▶ 2](<clips/clips/jmu_offense_1/video/2.mp4>){.clip-button}
+[▶ 3](<clips/clips/jmu_offense_1/video/3.mp4>){.clip-button}
+[▶ 4](<clips/clips/jmu_offense_1/video/4.mp4>){.clip-button}
+[▶ 5](<clips/clips/jmu_offense_1/video/5.mp4>){.clip-button}
+[▶ 6](<clips/clips/jmu_offense_1/video/6.mp4>){.clip-button}
+[▶ 7](<clips/clips/jmu_offense_1/video/7.mp4>){.clip-button}
+[▶ 8](<clips/clips/jmu_offense_1/video/8.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Fast-paced initiation with empty corner PnR as primary action" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Push ball off makes/misses and make sure ball gets in Robinson/Stephenson hands; clear desired side and try to gain advantage off wing drag + hard roll
+
+:::
+
+<div class="two-col">
+<div>
+
+#### How They Do It
+
+- Send tracker up the floor for rim run and clear corner to get Robinson/Stephenson downhill and force rotation
+- Bigs have option to pop/roll hard depending on coverage and flow into primary sets if they don’t gain advantage
+
+</div>
+<div class="game-plan">
+
+#### How I’d Defend It
+
+- Maintain coverage depending on screener and pick up early to not allow momentum into front court
+- Switch guards out of PnR to maintain ball pressure similar to VT
+
+</div>
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ 1](<clips/clips/jmu_offense_2/video/1.mp4>){.clip-button}
+[▶ 2](<clips/clips/jmu_offense_2/video/2.mp4>){.clip-button}
+[▶ 3](<clips/clips/jmu_offense_2/video/3.mp4>){.clip-button}
+[▶ 4](<clips/clips/jmu_offense_2/video/4.mp4>){.clip-button}
+[▶ 5](<clips/clips/jmu_offense_2/video/5.mp4>){.clip-button}
+[▶ 6](<clips/clips/jmu_offense_2/video/6.mp4>){.clip-button}
+[▶ 7](<clips/clips/jmu_offense_2/video/7.mp4>){.clip-button}
+[▶ 8](<clips/clips/jmu_offense_2/video/8.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Ghost flare sets late in shot clock + perimeter back screens for bigs" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Run ghost flare set out of 1-4 low spacing and use pistol to get bigs cutting to the low post from weakside
+
+:::
+
+<div class="two-col">
+<div>
+
+#### How They Do It
+
+- Ghost flare/horns twist out of similar spacing looks to generate quick advantage for shooters
+- Lift the floor out of their pistol and flow into a cross screen/rip screen from weakside to eliminate help under the basket
+
+</div>
+<div class="game-plan">
+
+#### How I’d Defend It
+
+- Recognize ghost flare spacing and switch ball screen + trail flare with high hands; maintain positioning in corner and load up the box from the wing
+- Keep defender low off non-shooters to stunt the rip screen and stay physical/deny to not allow basket cuts
+
+</div>
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ 1](<clips/clips/jmu_offense_3/video/1.mp4>){.clip-button}
+[▶ 2](<clips/clips/jmu_offense_3/video/2.mp4>){.clip-button}
+[▶ 3](<clips/clips/jmu_offense_3/video/3.mp4>){.clip-button}
+[▶ 4](<clips/clips/jmu_offense_3/video/4.mp4>){.clip-button}
+[▶ 5](<clips/clips/jmu_offense_3/video/5.mp4>){.clip-button}
+[▶ 6](<clips/clips/jmu_offense_3/video/6.mp4>){.clip-button}
+[▶ 7](<clips/clips/jmu_offense_3/video/7.mp4>){.clip-button}
+[▶ 8](<clips/clips/jmu_offense_3/video/8.mp4>){.clip-button}
+[▶ 9](<clips/clips/jmu_offense_3/video/9.mp4>){.clip-button}
+[▶ 10](<clips/clips/jmu_offense_3/video/10.mp4>){.clip-button}
+[▶ 11](<clips/clips/jmu_offense_3/video/11.mp4>){.clip-button}
+[▶ 12](<clips/clips/jmu_offense_3/video/12.mp4>){.clip-button}
+[▶ 13](<clips/clips/jmu_offense_3/video/13.mp4>){.clip-button}
+
+:::
+
+::::
+
+# Defense
+
+<div class="section-note">Core defensive identity concepts and the intended attack plan against each coverage.</div>
+
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Heavy gap from weakside corner along baseline with connected perimeter rotation" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Position weakside corner defender under the basket and rotate out of it on weakside to clog the paint
+
+:::
+
+<div class="two-col">
+<div>
+
+#### How They Do It
+
+- Rotate wing down to corner and top of the key to wing to protect next two passes before rotating out with corner defender
+- Collapse after paint touch to prevent easy passes and clog middle of the floor
+
+</div>
+<div class="game-plan">
+
+#### How I’d Attack It
+
+- Find skip pass early, especially to the wing to confuse the rotation and play 2v1 on weakside
+- Play more out of spread action to provide more space for drivers and play off 2 feet against collapse
+
+</div>
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ 1](<clips/clips/jmu_defense_1/video/1.mp4>){.clip-button}
+[▶ 2](<clips/clips/jmu_defense_1/video/2.mp4>){.clip-button}
+[▶ 3](<clips/clips/jmu_defense_1/video/3.mp4>){.clip-button}
+[▶ 4](<clips/clips/jmu_defense_1/video/4.mp4>){.clip-button}
+[▶ 5](<clips/clips/jmu_defense_1/video/5.mp4>){.clip-button}
+[▶ 6](<clips/clips/jmu_defense_1/video/6.mp4>){.clip-button}
+[▶ 7](<clips/clips/jmu_defense_1/video/7.mp4>){.clip-button}
+[▶ 8](<clips/clips/jmu_defense_1/video/8.mp4>){.clip-button}
+[▶ 9](<clips/clips/jmu_defense_1/video/9.mp4>){.clip-button}
+[▶ 10](<clips/clips/jmu_defense_1/video/10.mp4>){.clip-button}
+[▶ 11](<clips/clips/jmu_defense_1/video/11.mp4>){.clip-button}
+[▶ 12](<clips/clips/jmu_defense_1/video/12.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Mix in show + recover in ball screens with 4/5; over-drop most common coverage" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Mostly play over-drop against ball screens but go show + recover with bigs against specific matchups
+
+:::
+
+<div class="two-col">
+<div>
+
+#### How They Do It
+
+- Shrink the floor in the paint with perimeter defenders collapsing on roller out of show + recover
+- Keep big close to the level in over-drop to close off driving lanes and maintain contact with roller
+
+</div>
+<div class="game-plan">
+
+#### How I’d Attack It
+
+- Use Cat out of the short roll and keep wing positioned high as secondary outlet
+- Immediately attack the paint to get JMU in scramble mode and play against advantage
+
+</div>
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ 1](<clips/clips/jmu_defense_2/video/1.mp4>){.clip-button}
+[▶ 2](<clips/clips/jmu_defense_2/video/2.mp4>){.clip-button}
+[▶ 3](<clips/clips/jmu_defense_2/video/3.mp4>){.clip-button}
+[▶ 4](<clips/clips/jmu_defense_2/video/4.mp4>){.clip-button}
+[▶ 5](<clips/clips/jmu_defense_2/video/5.mp4>){.clip-button}
+[▶ 6](<clips/clips/jmu_defense_2/video/6.mp4>){.clip-button}
+[▶ 7](<clips/clips/jmu_defense_2/video/7.mp4>){.clip-button}
+[▶ 8](<clips/clips/jmu_defense_2/video/8.mp4>){.clip-button}
+[▶ 9](<clips/clips/jmu_defense_2/video/9.mp4>){.clip-button}
+[▶ 10](<clips/clips/jmu_defense_2/video/10.mp4>){.clip-button}
+[▶ 11](<clips/clips/jmu_defense_2/video/11.mp4>){.clip-button}
+[▶ 12](<clips/clips/jmu_defense_2/video/12.mp4>){.clip-button}
+[▶ 13](<clips/clips/jmu_defense_2/video/13.mp4>){.clip-button}
+
+:::
+
+::::
+
+## Row {.flow}
+
+:::: {.card .concept-card title="Trail off-ball screens + selective switching; 1-2-1-1 full-court pressure" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Trail all off-ball screens and barely switch; go into 1-2-1-1 with run + jump mixed in
+
+:::
+
+<div class="two-col">
+<div>
+
+#### How They Do It
+
+- Trail hip tightly but also mix in other coverages; mostly worried about getting through the screen vs. specific way and not switching
+- Mix in 1-2-1-1 with traps leading deep into front court off made free throws
+
+</div>
+<div class="game-plan">
+
+#### How I’d Attack It
+
+- Look for curls off stagger away/single away screens; make the right reads depending on what they try to do off-ball
+
+</div>
+</div>
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+[▶ 1](<clips/clips/jmu_defense_3/video/1.mp4>){.clip-button}
+[▶ 2](<clips/clips/jmu_defense_3/video/2.mp4>){.clip-button}
+[▶ 3](<clips/clips/jmu_defense_3/video/3.mp4>){.clip-button}
+[▶ 4](<clips/clips/jmu_defense_3/video/4.mp4>){.clip-button}
+[▶ 5](<clips/clips/jmu_defense_3/video/5.mp4>){.clip-button}
+[▶ 6](<clips/clips/jmu_defense_3/video/6.mp4>){.clip-button}
+[▶ 7](<clips/clips/jmu_defense_3/video/7.mp4>){.clip-button}
+[▶ 8](<clips/clips/jmu_defense_3/video/8.mp4>){.clip-button}
+[▶ 9](<clips/clips/jmu_defense_3/video/9.mp4>){.clip-button}
+[▶ 10](<clips/clips/jmu_defense_3/video/10.mp4>){.clip-button}
+[▶ 11](<clips/clips/jmu_defense_3/video/11.mp4>){.clip-button}
+
+:::
+
+::::
+
+
+# Actions / ATOs
+
+## Row {.flow}
+
+:::: {.card title="Common Actions / ATOs" fill="false"}
+
+<div class="section-note">Named action library from the JMU film sample.</div>
+
+<div class="action-list">
+<div class="action-row"><span class="action-name">Zipper Seal</span><a class="clip-button" href="clips/clips/jmu_atos/video/zipper_seal.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Gut Top PnR</span><a class="clip-button" href="clips/clips/jmu_atos/video/gut_top_PnR.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Wing Ram Empty Follow</span><a class="clip-button" href="clips/clips/jmu_atos/video/wing_ram_empty_follow.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Hook UCLA Top PnR</span><a class="clip-button" href="clips/clips/jmu_atos/video/hook_ucla_top_PnR.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Wing Miami Veer</span><a class="clip-button" href="clips/clips/jmu_atos/video/wing_miami_veer.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">High Horns Twist Veer</span><a class="clip-button" href="clips/clips/jmu_atos/video/high_horns_twist_veer.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Ram Exit</span><a class="clip-button" href="clips/clips/jmu_atos/video/ram_exit.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Spread Top Zoom Option</span><a class="clip-button" href="clips/clips/jmu_atos/video/spread_top_zoom_option.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">77 Flip</span><a class="clip-button" href="clips/clips/jmu_atos/video/77_flip.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Pistol Flare Wrap</span><a class="clip-button" href="clips/clips/jmu_atos/video/pistol_flare_wrap.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Elbow Away Zoom</span><a class="clip-button" href="clips/clips/jmu_atos/video/elbow_away_zoom.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Ram Curl</span><a class="clip-button" href="clips/clips/jmu_atos/video/ram_curl.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Horns Twist Shake</span><a class="clip-button" href="clips/clips/jmu_atos/video/horns_twist_shake.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Weave Top PnR</span><a class="clip-button" href="clips/clips/jmu_atos/video/weave_topPnR.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Point Over Rolex</span><a class="clip-button" href="clips/clips/jmu_atos/video/point_over_rolex.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Shallow Wiper Stagger Twirl</span><a class="clip-button" href="clips/clips/jmu_atos/video/shallow_wiper_stagger_twirl.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Stagger Wedge Swing Stepup</span><a class="clip-button" href="clips/clips/jmu_atos/video/stagger_wedge_swing_stepup.mp4">▶ Watch</a></div>
+</div>
+
+::::
+
+# Special Situations
+
+## Row {.flow}
+
+:::: {.card title="Special Situations" fill="false"}
+
+<div class="action-list">
+<div class="action-row"><span class="action-name">Pop Flex STS</span><a class="clip-button" href="clips/clips/jmu_special_situations/video/pop_flex_STS.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Top Zoom</span><a class="clip-button" href="clips/clips/jmu_special_situations/video/top_zoom.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Get Weakside Stagger</span><a class="clip-button" href="clips/clips/jmu_special_situations/video/get_weakside_stagger.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Shuffle Slice UCLA</span><a class="clip-button" href="clips/clips/jmu_special_situations/video/shuffle_slice_UCLA.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Double Slice Stagger</span><a class="clip-button" href="clips/clips/jmu_special_situations/video/double_slice_stagger.mp4">▶ Watch</a></div>
+</div>
+
+::::
+
+# Final Three Keys
+
+## Row {.flow}
+
+:::: {.card .three-keys title="Final Three Keys" fill="false"}
+
+<div class="keys-grid">
+<div class="key-item"><span class="key-number">1</span><strong>Pick up Robinson and Stephenson early and keep them from turning the corner into early paint touches.</strong></div>
+<div class="key-item"><span class="key-number">2</span><strong>Stretch their weakside gap help with spacing, skips, and quick short-roll decisions before the rotation recovers.</strong></div>
+<div class="key-item"><span class="key-number">3</span><strong>Win the screener matchup: stay attached to pop threats while staying physical on rolls, seals, and low-post cuts.</strong></div>
+</div>
+
+::::
