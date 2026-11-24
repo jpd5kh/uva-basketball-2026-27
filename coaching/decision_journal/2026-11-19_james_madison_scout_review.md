@@ -1,4 +1,4 @@
-# Game #6  vs. Drexel Scout Review
+# Game #6  vs. James Madison Scout Review
 
 Pregame scout grade: 94/100
 Postgame accuracy: 95/100

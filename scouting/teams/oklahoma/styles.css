@@ -1,0 +1,96 @@
+
+/* =========================================================
+   DREXEL SCOUTING REPORT — DASHBOARD STYLES
+   ========================================================= */
+
+/* ---------- Theme ---------- */
+:root {
+  --drexel-navy: #07294d;
+  --drexel-navy-2: #0d3b66;
+  --drexel-gold: #f5c242;
+
+  --ink: #172033;
+  --muted: #667085;
+
+  --bg: #f5f7fa;
+  --panel: #ffffff;
+  --panel-soft: #f8fafc;
+
+  --border: #dde3ea;
+  --border-strong: #c7d0da;
+
+  --blue-soft: #edf4fa;
+  --gold-soft: #fff8e7;
+
+  --radius: 12px;
+}
+
+
+/* ---------- Overall dashboard ---------- */
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+  font-size: 0.98rem;
+}
+
+.dashboard-page {
+  background: var(--bg);
+}
+
+.dashboard-content {
+  padding-top: 20px;
+}
+
+
+/* ---------- Top dashboard navbar ---------- */
+
+.navbar {
+  background: var(--drexel-navy) !important;
+  border-bottom: 4px solid var(--drexel-gold);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand,
+.navbar-title,
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-brand {
+  font-weight: 750;
+  letter-spacing: 0.01em;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  opacity: 0.88;
+  border-radius: 6px;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.navbar-nav .nav-link:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.navbar-nav .nav-link.active {
+  opacity: 1;
+  color: var(--drexel-gold) !important;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-logo {
+  max-height: 38px;
+}
+
+
+/* ---------- Typography ---------- */
+
+h1, h2, h3, h4 {
+  color: var(--drexel-navy);
+}
+
+h3 {

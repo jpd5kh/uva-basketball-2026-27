@@ -1,0 +1,1245 @@
+---
+title: "Oklahoma Sooners Scouting Report"
+format:
+  dashboard:
+    theme: cosmo
+    orientation: rows
+    scrolling: true
+    expandable: true
+    embed-resources: true
+---
+
+<style>
+:root {
+  --ou-crimson: #841617;
+  --ou-deep: #510b10;
+  --ou-cream: #FDF9D8;
+  --ou-cream-soft: #f8f1e4;
+  --ou-blush: #fbefef;
+  --ink: #202332;
+  --muted: #687083;
+  --bg: #f3f4f7;
+  --panel: #ffffff;
+  --border: #e1e3e8;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.dashboard-page {
+  padding: .9rem 1rem 1.6rem !important;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: linear-gradient(110deg, var(--ou-deep), var(--ou-crimson)) !important;
+  border-bottom: 4px solid var(--ou-cream);
+  box-shadow: 0 4px 14px rgba(81,11,16,.18);
+}
+
+.navbar .navbar-title,
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link.active {
+  color: var(--ou-cream) !important;
+  font-weight: 800;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 5px 18px rgba(32,35,50,.07);
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(120deg, var(--ou-deep), var(--ou-crimson));
+  color: #fff;
+  border-bottom: 3px solid #d4bca3;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.hero-card {
+  border: none;
+  background: linear-gradient(120deg, #510b10, #841617 58%, #a3252c);
+  color: #fff;
+}
+
+.hero-card .card-body {
+  padding: 1.25rem 1.4rem;
+}
+
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: white;
+  padding: 8px;
+  border: 2px solid var(--ou-cream);
+}
+
+.hero-kicker {
+  color: var(--ou-cream);
+  font-size: .76rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 1.55rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: .2rem 0 .35rem;
+}
+
+.hero-sub {
+  opacity: .92;
+  max-width: 1050px;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: .75rem;
+}
+
+.stat-tile {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--ou-crimson);
+  border-radius: 12px;
+  padding: .8rem .9rem;
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: .73rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-weight: 850;
+  margin-top: .18rem;
+}
+
+.player-card {
+  border-left: 6px solid var(--ou-crimson);
+}
+
+.concept-card {
+  border-top: 6px solid var(--ou-crimson);
+}
+
+.player-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .75rem;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: .7rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.role-text {
+  font-weight: 800;
+  color: var(--ou-crimson);
+}
+
+.player-number {
+  min-width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--ou-crimson);
+  color: var(--ou-cream);
+  font-weight: 900;
+  font-size: 1.05rem;
+}
+
+.player-meta, .concept-summary {
+  background: var(--ou-blush);
+  border-left: 4px solid var(--ou-crimson);
+  border-radius: 10px;
+  padding: .85rem 1rem;
+  margin: .45rem 0 1rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.game-plan {
+  background: var(--ou-cream-soft);
+  border-left: 4px solid var(--ou-cream);
+  border-radius: 10px;
+  padding: .75rem 1rem;
+}
+
+.numbers-box {
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .65rem .9rem;
+}
+
+.clip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .45rem;
+}
+
+.clip-button {
+  display: inline-block;
+  padding: .46rem .68rem;
+  border-radius: 999px;
+  border: 1px solid #d9b9b5;
+  background: #fff8f2;
+  color: var(--ou-deep) !important;
+  text-decoration: none;
+  font-weight: 750;
+  font-size: .88rem;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.clip-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 9px rgba(132,22,23,.12);
+  text-decoration: none;
+}
+
+.keys-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: .85rem;
+}
+
+.key-item {
+  background: linear-gradient(180deg, #fff, #fbf3e9);
+  border: 1px solid #e0c6be;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.key-number {
+  display: inline-flex;
+  width: 1.95rem;
+  height: 1.95rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--ou-crimson);
+  color: var(--ou-cream);
+  font-weight: 900;
+  margin-right: .45rem;
+}
+
+.action-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: .6rem;
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: .7rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fbfbfd;
+}
+
+.action-name {
+  font-weight: 800;
+  color: var(--ou-deep);
+}
+
+.section-note {
+  color: var(--muted);
+  font-size: .91rem;
+  margin-bottom: .8rem;
+}
+
+h4 {
+  color: var(--ou-deep);
+  font-weight: 850;
+  margin-top: .8rem;
+}
+
+@media (max-width: 950px) {
+  .snapshot-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .two-col, .keys-grid, .action-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 650px) {
+  .hero-wrap { grid-template-columns: 1fr; }
+  .hero-logo { width: 82px; height: 82px; }
+  .snapshot-grid { grid-template-columns: 1fr; }
+  .dashboard-page { padding-left: .45rem !important; padding-right: .45rem !important; }
+}
+.clip-grid > p { margin: 0; }
+.game-plan { border-left-color: #b58b68; }
+.card-body { padding: 1rem 1.2rem; }
+</style>
+
+# Overview
+
+## Row {.flow}
+
+:::::: {.card .hero-card fill="false"}
+
+<div class="hero-wrap">
+<img class="hero-logo" src="images/oklahoma_logo.png" alt="Oklahoma logo">
+<div><div class="hero-kicker">Opponent Scout • Oklahoma</div><div class="hero-title">Early threes, tandem bigs, flexible defense</div><div class="hero-sub">Transition pace through Aaliyah Chavez, early rim runs and seals, high-low exchanges, and a flexible defense built around pressure and peel switching.</div></div>
+</div>
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card title="Team Snapshot" fill="false"}
+
+<div class="snapshot-grid">
+  <div class="stat-tile"><div class="stat-label">Record</div><div class="stat-value">6-0</div></div>
+  <div class="stat-tile"><div class="stat-label">Conference</div><div class="stat-value">SEC • 0–0</div></div>
+  <div class="stat-tile"><div class="stat-label">Head Coach</div><div class="stat-value">Jennie Baranczyk</div></div>
+  <div class="stat-tile"><div class="stat-label">Preseason Poll</div><div class="stat-value">Ranked 6th in SEC</div></div>
+</div>
+
+**Last Season:** 26-8, Lost in Sweet Sixteen of NCAA Tournament  
+**Key Returners:** Aaliyah Chavez, Sahara Williams, Brooklyn Stewart  
+**Key Transfers/Newcomers:** LeeLee Bell, Sa'Myah Smith, Isi Ozzy-Momodu, Jordan Speiser, Sina Höllerl  
+
+**Style Notes:** Transition-based offense that puts up early 3s and looks for quick seals and rim runs for bigs; defensively, force ballhandlers to the sideline and play a flexible man with peel switching and scramble rotation
+::::::
+
+## Row {.flow}
+
+:::::: {.card title="Overview / Identity" fill="false"}
+
+Oklahoma looks to put up early threes and find rim runs and seals off makes and misses. Their two-big system uses high-post exchanges, rips and flashes to create high-low opportunities with the floor lifted. Chavez initiates at pace, including pistol entries that clear the baseline for downhill attacks. Defensively, they pressure the ball, overplay corner catches and use peel switching and scramble rotations to maintain structure. They also mix in matchup 2-3 zone, including out of BLOBs.
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .three-keys title="Three Keys" fill="false"}
+
+<div class="keys-grid">
+<div class="key-item"><span class="key-number">1</span><strong>Pick up early, locate shooters and match rim runners before halfcourt.</strong></div>
+<div class="key-item"><span class="key-number">2</span><strong>Pressure high-post catches and stay physical on seals and high-low entries.</strong></div>
+<div class="key-item"><span class="key-number">3</span><strong>Attack peel switches with slips, backdoors and quick ball reversals.</strong></div>
+</div>
+
+::::::
+
+# Personnel
+
+
+## Row {.flow}
+
+:::::: {.card .player-card title="LeeLee Bell #30" fill="false"}
+
+<div class="player-topline"><div><div class="eyebrow">ROLE</div><div class="role-text">Physical stretch big</div></div><div class="player-number">#30</div></div>
+
+::: {.player-meta}
+
+**Identity:** Stretch 5 who can play at all three levels and has great hands in the low post
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### Tendencies
+
+- Will put up early 3s as trailing big
+- Loves turnaround jumper off high post catch
+- Looks for catch over the top in low post and maintains elite positioning
+- Part of tandem of bigs running the floor and getting to low post seaks before ball crosses halfcourt
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Pressure the high post catch and be physical on transition seals
+- Stay on her back in the post with lengthy defender and always track in transition
+
+:::
+
+:::::
+
+#### Numbers
+
+::: {.numbers-box}
+
+- 7/24 from 3s this year; 3/11 on spot-ups, 7/23 on catch and shoot
+- 0.842 PPP on post-ups
+- 5/6 on jumpers from high post
+- 31 put backs so far this season (1.032 PPP)
+- 0.750 PPP in transition this season (33.3% in transition)
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/leelee_bell/video/early_rim_run.mp4">▶ Early Rim Run</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/leelee_bell/video/early_seal.mp4">▶ Early Seal</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/leelee_bell/video/early_three.mp4">▶ Early Three</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/leelee_bell/video/ft_line_jumper_2.mp4">▶ FT Line Jumper 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/leelee_bell/video/ft_line_jumper.mp4">▶ FT Line Jumper</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/leelee_bell/video/offensive_glass.mp4">▶ Offensive Glass</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/leelee_bell/video/transition_trailer.mp4">▶ Transition Trailer</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .player-card title="Sahara Williams #6" fill="false"}
+
+<div class="player-topline"><div><div class="eyebrow">ROLE</div><div class="role-text">Stretch wing</div></div><div class="player-number">#6</div></div>
+
+::: {.player-meta}
+
+**Identity:** Stretch wing with great positional size who can work out of low post
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### Tendencies
+
+- Slot runs in transition to spread the floor
+- Elite off-ball defender who jumps DHOs and makes great decisions with ball pressure
+- Gets 3s up early in shot clock to execute team philosophy
+- Physical driver and attacker from all over the floor (will go through her defender)
+- Can drive either way but prefers to get back to her right to finish
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Map her in transition and pick up in the slot to impede catch and shoot 3s
+- Put most physical defender on her to limit impact getting downhill 
+
+:::
+
+:::::
+
+#### Numbers
+
+::: {.numbers-box}
+
+- 31% from 3 this year, 1/11 on spot-up 3s
+- Shoots 73.5% at the rim
+- 1.533 PPP off rim put backs
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sahara_williams/video/dho_shoot_the_gap.mp4">▶ DHO Shoot The Gap</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sahara_williams/video/floor_spacer.mp4">▶ Floor Spacer</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sahara_williams/video/physical_attack_2.mp4">▶ Physical Attack 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sahara_williams/video/physical_attack.mp4">▶ Physical Attack</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sahara_williams/video/slot_run.mp4">▶ Slot Run</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sahara_williams/video/transition_attack.mp4">▶ Transition Attack</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .player-card title="Brooklyn Stewart #21" fill="false"}
+
+<div class="player-topline"><div><div class="eyebrow">ROLE</div><div class="role-text">Traditional, connecting big</div></div><div class="player-number">#21</div></div>
+
+::: {.player-meta}
+
+**Identity:** Big rim and high post presence who helps connect the offense within high-low sets
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### Tendencies
+
+- Not a 3-point threat but catch and turn jumpers at FT line
+- Plays within big tandem as early seal or trailer
+- Prefers catches on the right block in low-post and usually works baseline
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Front or 3/4 deny baseline off the right block to force her into tough catches and bad angles
+- Pressure off high post catch to make jumper and lob pass difficult
+
+:::
+
+:::::
+
+#### Numbers
+
+::: {.numbers-box}
+
+- 1.500 PPP on post-ups
+- 3/7 on high post jumpers
+- 76% FG% at the rim
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/brooklyn_stewart/video/ft_line_jumper_2.mp4">▶ FT Line Jumper 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/brooklyn_stewart/video/ft_line_jumper.mp4">▶ FT Line Jumper</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/brooklyn_stewart/video/right_block_seal.mp4">▶ Right Block Seal</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/brooklyn_stewart/video/transition_rim_run.mp4">▶ Transition Rim Run</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/brooklyn_stewart/video/transition_trailer.mp4">▶ Transition Trailer</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .player-card title="Sa'Myah Smith #5" fill="false"}
+
+<div class="player-topline"><div><div class="eyebrow">ROLE</div><div class="role-text">Rim running and shot blocking big</div></div><div class="player-number">#5</div></div>
+
+::: {.player-meta}
+
+**Identity:** Elite defender and physical post presence who works within system of bigs
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### Tendencies
+
+- Works out of tandem big exchange with Bell and looks for early rim runs
+- Can pop out to top of the key to work as connector
+- Looks to get position in middle of the floor and find advantage out of catch + turn
+- Lift from opposite block into slice cut high-low with Smith as passer
+- Finds easy looks early in shot clock running through the gut as trailer
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Matchup early and cut off middle of the floor catches in transition
+- Play off her on the perimeter and keep her out of the paint
+
+:::
+
+:::::
+
+#### Numbers
+
+::: {.numbers-box}
+
+- 1.833 PPP on post-ups
+- 2/2 on high post jumpers this season
+- 1.625 PPP in transition
+- 0.78 AST/TO
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sa%27myah_smith/video/early_rim_run_exchange.mp4">▶ Early Rim Run Exchange</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sa%27myah_smith/video/ft_line_jumper.mp4">▶ FT Line Jumper</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sa%27myah_smith/video/high_low_catch.mp4">▶ High Low Catch</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sa%27myah_smith/video/high_low_lift.mp4">▶ High Low Lift</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sa%27myah_smith/video/high_post_jumper.mp4">▶ High Post Jumper</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/sa%27myah_smith/video/transition_trailer.mp4">▶ Transition Trailer</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .player-card title="Aaliyah Chavez #2" fill="false"}
+
+<div class="player-topline"><div><div class="eyebrow">ROLE</div><div class="role-text">Lead ballhandler and primary initiator</div></div><div class="player-number">#2</div></div>
+
+::: {.player-meta}
+
+**Identity:** Plays at an extremely quick and frantic pace and looks for early 3s and downhill paint touches
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### Tendencies
+
+- Moves off the catch and attacks closeout to get to midrange jumper
+- Will look to get downhill in transition along the sideline for early paint touch and force rotation
+- Loves going left and getting to a one or two dribble pullup
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Load up the box off non-shooters to cut off middle and force pickups
+- Pick up quickly in transition and allow her to force up her shots
+
+:::
+
+:::::
+
+#### Numbers
+
+::: {.numbers-box}
+
+- 1.000 PPP as PnR ballhandler on 6 possessions
+- 1.190 PPP in transition
+- 1/7 on pull up 3s
+- 9.6% TO%
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/aaliyah_chavez/video/early_three_2.mp4">▶ Early Three 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/aaliyah_chavez/video/early_three.mp4">▶ Early Three</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/aaliyah_chavez/video/middle_midrange_2.mp4">▶ Middle Midrange 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/aaliyah_chavez/video/middle_midrange.mp4">▶ Middle Midrange</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .player-card title="Isi Ozzy-Momodu #9" fill="false"}
+
+<div class="player-topline"><div><div class="eyebrow">ROLE</div><div class="role-text">Physical, lengthy big</div></div><div class="player-number">#9</div></div>
+
+::: {.player-meta}
+
+**Identity:** Similar roles to other bigs within system; trailer and rim runner who will put the ball on the floor from high-post
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### Tendencies
+
+- High post catches and tandem exchange within high-low sets
+- Seen as trailer and rim runner and will put the ball down going either way to attack rim
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Give her a step off the high post catch and maintain positioning
+- Box out early and keep pressure the same as other bigs in the paint with physicality in low post
+
+:::
+
+:::::
+
+#### Numbers
+
+::: {.numbers-box}
+
+- 1.053 PPP on post-ups
+- Only 0/1 on high post jumpers - more of a passer
+- 1.364 PPP in transition
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/isi_ozzy_momodu/video/high_low_seal.mp4">▶ High Low Seal</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/isi_ozzy_momodu/video/high_post_catch.mp4">▶ High Post Catch</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/isi_ozzy_momodu/video/perimeter_attack_2.mp4">▶ Perimeter Attack 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/isi_ozzy_momodu/video/perimeter_attack.mp4">▶ Perimeter Attack</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/isi_ozzy_momodu/video/transition_rim_run.mp4">▶ Transition Rim Run</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/isi_ozzy_momodu/video/transition_trailer.mp4">▶ Transition Trailer</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .player-card title="Jordan Speiser #23" fill="false"}
+
+<div class="player-topline"><div><div class="eyebrow">ROLE</div><div class="role-text">Spot-up shooter</div></div><div class="player-number">#23</div></div>
+
+::: {.player-meta}
+
+**Identity:** Big wing with 3-point range from everywhere
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### Tendencies
+
+- Loves to trail on the left wing looking for catch and shoot 3s
+- Will pull up from multiple feet beyond the arc
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Guard Her
+
+- Pick up early and close out hard to force her to put the ball down
+
+:::
+
+:::::
+
+#### Numbers
+
+::: {.numbers-box}
+
+- 37.5% from 3
+- 50% (6/12) on spot-up 3s
+- 10/21 on 3s from left wing (47.6%)
+
+:::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/jordan_speiser/video/three_point_range_2.mp4">▶ Three Point Range 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/jordan_speiser/video/three_point_range.mp4">▶ Three Point Range</a>
+
+:::
+
+::::::
+
+# Offense
+
+<div class="section-note">Core offensive identity concepts. Clips below are grouped by the exact concept buckets from the film study.</div>
+
+
+## Row {.flow}
+
+:::::: {.card .concept-card title="Early 3s and rim runs off makes and misses" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Put up 3s early in the shot clock and hit bigs on rim runs and seals in transition
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### How They Do It
+
+- Slot runs by wings and rim runs by bigs to space the floor and spread out the defense
+- Use connectors to get ball up the floor and take first good look from perimeter
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Defend It
+
+- Pick up early and slow them down by stopping momentum in the backcourt
+- Make sure structure is set before ball crosses halfcourt and maintain big on trailer to limit impact
+
+:::
+
+:::::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/1.mp4">▶ Clip 1</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/2.mp4">▶ Clip 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/3.mp4">▶ Clip 3</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/4.mp4">▶ Clip 4</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/5.mp4">▶ Clip 5</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/6.mp4">▶ Clip 6</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/7.mp4">▶ Clip 7</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/8.mp4">▶ Clip 8</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/9.mp4">▶ Clip 9</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/10.mp4">▶ Clip 10</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/11.mp4">▶ Clip 11</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/12.mp4">▶ Clip 12</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/13.mp4">▶ Clip 13</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_1/video/14.mp4">▶ Clip 14</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .concept-card title="High post exchange and high-low lobs with lifted floor" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do**: Use two bigs within their system and exchange them through rips and flashes
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### How They Do It
+
+- Run double swing rip for high post big and then flash from low block
+- Look over-the-top against fronts and keep corners lifted to empty baseline and occupy help
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Defend It
+
+- Force bigs to finish through contact and stay on their backs in the low post
+- Pressure the catch from the high post and force them to put the ball on the floor and win isolations
+
+:::
+
+:::::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/1.mp4">▶ Clip 1</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/2.mp4">▶ Clip 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/3.mp4">▶ Clip 3</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/4.mp4">▶ Clip 4</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/5.mp4">▶ Clip 5</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/6.mp4">▶ Clip 6</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/7.mp4">▶ Clip 7</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/8.mp4">▶ Clip 8</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/9.mp4">▶ Clip 9</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/10.mp4">▶ Clip 10</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/11.mp4">▶ Clip 11</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_2/video/12.mp4">▶ Clip 12</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .concept-card title="Pistol entries to get Chavez attacking the sideline and work her out of the corner" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Push ball up the floor with Chavez through pistol entries and open baseline for paint touches
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### How They Do It
+
+- Keep corner and baseline cleared to open get action and get her downhill
+- Bigs keep off the catch and flow into normal progressions while hiding Chavez to run out of the corner
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Defend It
+
+- Keep big low against the pistol catch and go under to keep Chavez out of the paint early
+- Try to send as much help as possible baseline while maintaining structure on back end
+
+:::
+
+:::::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/1.mp4">▶ Clip 1</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/2.mp4">▶ Clip 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/3.mp4">▶ Clip 3</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/4.mp4">▶ Clip 4</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/5.mp4">▶ Clip 5</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/6.mp4">▶ Clip 6</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/7.mp4">▶ Clip 7</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/8.mp4">▶ Clip 8</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/9.mp4">▶ Clip 9</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_offense_3/video/10.mp4">▶ Clip 10</a>
+
+:::
+
+::::::
+
+# Defense
+
+<div class="section-note">Core defensive identity concepts and the intended attack plan against each coverage.</div>
+
+
+## Row {.flow}
+
+:::::: {.card .concept-card title="Peel switch and maintain flexibility; very switchable on the perimeter" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Don't rely on set scheme and peel switch when necessary to maintain structure and matchups
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### How They Do It
+
+- Pressure the ball and fight through on and off-ball screens
+- Only switch when on-ball defender gets beat and scram out of it after action reset
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Attack It
+
+- Work slips with bigs and try to find advantageous catches in the middle of the paint to kick out
+- Find best reads off screens and attack mismatches when they do peel switch
+
+:::
+
+:::::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/1.mp4">▶ Clip 1</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/2.mp4">▶ Clip 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/3.mp4">▶ Clip 3</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/4.mp4">▶ Clip 4</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/5.mp4">▶ Clip 5</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/6.mp4">▶ Clip 6</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/7.mp4">▶ Clip 7</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/8.mp4">▶ Clip 8</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/9.mp4">▶ Clip 9</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/10.mp4">▶ Clip 10</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/11.mp4">▶ Clip 11</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/12.mp4">▶ Clip 12</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_1/video/13.mp4">▶ Clip 13</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .concept-card title="Overplay out of corners and deny catch to force cutter backdoor" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Maintain deny positioning out of corners to help off attacks and blow out DHOs/pindowns
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### How They Do It
+
+- Backside help usually comes from opposite wing with the corner defender occupied in passing lanes
+- Switch off rejects with low defender from wing to block backdoors
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Attack It
+
+- Flare off the switch and work dribble-at backdoor with the screener
+- Clear the baseline reject quickly and reverse the ball so cutting lanes open
+
+:::
+
+:::::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/1.mp4">▶ Clip 1</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/2.mp4">▶ Clip 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/3.mp4">▶ Clip 3</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/4.mp4">▶ Clip 4</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/5.mp4">▶ Clip 5</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/6.mp4">▶ Clip 6</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/7.mp4">▶ Clip 7</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_2/video/8.mp4">▶ Clip 8</a>
+
+:::
+
+::::::
+
+## Row {.flow}
+
+:::::: {.card .concept-card title="Go with matchup 2-3 out of BLOB and on some halfcourt sets and then mesh back into man (tandem 2-3)" fill="false"}
+
+::: {.concept-summary}
+
+**What They Do:** Mix up their coverages and go into matchup 2-3; switch everything and keep rim protectors under the basket
+
+:::
+
+::::: {.two-col}
+
+::: {.tendencies}
+
+#### How They Do It
+
+- Throw in zone unexpectedly off BLOBs and regular half court sets
+- Rotate around their bigs along the baseline and maintain pressure by matching up on perimeter
+
+:::
+
+::: {.game-plan}
+
+#### How I’d Attack It
+
+- Keep ball popping and find high post catch to lift big and work high-low similar to their philosphy
+
+:::
+
+:::::
+
+#### Clip Evidence
+
+::: {.clip-grid}
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_3/video/1.mp4">▶ Clip 1</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_3/video/2.mp4">▶ Clip 2</a>
+
+<a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_defense_3/video/3.mp4">▶ Clip 3</a>
+
+:::
+
+::::::
+
+
+# Actions / ATOs
+
+## Row {.flow}
+
+:::::: {.card title="Common Actions / ATOs" fill="false"}
+
+<div class="section-note">Named action library from the Oklahoma film sample.</div>
+
+<div class="action-list">
+<div class="action-row"><span class="action-name">Double Swing Middle Back Wide Pin</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/double_swing_middle_back_wide_pin.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Elbow Get Spain</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/elbow_get_spain.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Elbow Out High Low</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/elbow_out_high_low.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">High Horns</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/high_horns.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Horns Through</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/horns_through.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Middle Ram Follow</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/middle_ram_follow.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Middle Shuffle DHO</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/middle_shuffle_dho.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Middle Spain Wide Pin</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/middle_spain_wide_pin.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Rip Flare Double Swing Variation</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/rip_flare_double_swing_variation.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Top PnR Weakside Flare</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/top_PnR_weakside_flare.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Wing Drag</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_atos/video/wing_drag.mp4">▶ Watch</a></div>
+</div>
+
+::::::
+
+# Special Situations
+
+## Row {.flow}
+
+:::::: {.card title="Special Situations" fill="false"}
+
+<div class="action-list">
+<div class="action-row"><span class="action-name">Double Curl</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/double_curl.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Double Rip Seal</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/double_rip_seal.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Double Rip Twirl Exit</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/double_rip_twirl_exit.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Middle Double Curl Boomerang</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/middle_double_curl_boomerang.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Middle Seal Double Curl</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/middle_seal_double_curl.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Pop Flare Slip</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/pop_flare_slip.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Rip Slice STS</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/rip_slice_sts.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Slice Curl STS</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/slice_curl_sts.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Slice Flash</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/slice_flash.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Zipper Punch</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/zipper_punch.mp4">▶ Watch</a></div>
+<div class="action-row"><span class="action-name">Zipper Wide Pin</span><a class="clip-button" href="clips/Oklahoma%20Scouting%20Report%20Clips/oklahoma_special_situations/video/zipper_wide_pin.mp4">▶ Watch</a></div>
+</div>
+
+::::::
+
+# Final Three Keys
+
+## Row {.flow}
+
+:::::: {.card .three-keys title="Final Three Keys" fill="false"}
+
+<div class="keys-grid">
+<div class="key-item"><span class="key-number">1</span><strong>Pick up early, locate shooters and match rim runners before halfcourt.</strong></div>
+<div class="key-item"><span class="key-number">2</span><strong>Pressure high-post catches and stay physical on seals and high-low entries.</strong></div>
+<div class="key-item"><span class="key-number">3</span><strong>Attack peel switches with slips, backdoors and quick ball reversals.</strong></div>
+</div>
+
+::::::
