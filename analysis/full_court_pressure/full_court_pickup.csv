@@ -1,0 +1,108 @@
+Clip Number,Initiating Ballhandler,"Pressure intensity (contain, pressure, trap)",Time (s),"Advancement method (dribble, advance pass)","Initiation method (attack, DHO, ball screen, other set)"
+1,Kymora,Pressure,6.8,Dribble,Ball screen
+2,Kymora,Contain,4.5,Advance pass,Delay
+3,Mary,Pressure,8.4,Advance pass,Ball screen
+4,Kymora,Pressure,4.8,Dribble,Delay
+5,Kymora,Pressure,6.1,Dribble,DHO
+6,Kymora,Pressure,7.4,Dribble,DHO
+7,Kymora,Pressure,5.3,Advance pass,Swing
+8,Kymora,Pressure,5.6,Dribble,DHO
+9,Kymora,Pressure,7.4,Dribble,Delay
+10,Kymora,Pressure,5.8,Dribble,Delay
+11,Kymora,Pressure,6.8,Dribble,Attack
+12,Mary,Pressure,6.6,Dribble,Ball screen
+13,Mary,Pressure,6.2,Dribble,Delay
+14,Kymora,Pressure,8.9,Dribble,DHO
+15,Kymora,Pressure,6.7,Dribble,Attack
+16,Kymora,Pressure,6.2,Dribble,Attack
+17,Kymora,Pressure,5.8,Dribble,Attack
+18,Kymora,Pressure,5.1,Dribble,Attack
+19,Kymora,Pressure,7.0,Dribble,Delay
+20,Kymora,Pressure,5.4,Dribble,Attack
+21,Kymora,Pressure,7.1,Dribble,Swing
+22,Kymora,Pressure,7.3,Dribble,Ram
+23,Kymora,Pressure,5.9,Dribble,Ball screen
+24,Mary,Pressure,5.9,Dribble,Attack
+25,Kymora,Pressure,5.4,Dribble,Ball screen
+26,Kymora,Pressure,6.2,Dribble,Attack
+27,Kymora,Pressure,6.8,Dribble,Attack
+28,Mary,Pressure,3.9,Dribble,Attack
+29,Mary,Pressure,6.6,Dribble,Delay
+30,Kymora,Pressure,6.4,Dribble,Ball screen
+31,Mary,Pressure,5.0,Dribble,Attack
+32,Kymora,Pressure,6.7,Dribble,Attack
+33,Kymora,Pressure,5.9,Dribble,Wedge
+34,Kymora,Pressure,7.1,Dribble,Attack
+35,Mary,Pressure,7.2,Dribble,Deck
+36,Kymora,Pressure,5.9,Dribble,Attack
+37,Mary,Pressure,4.8,Dribble,Attack
+38,Kymora,Pressure,6.2,Dribble,Attack
+39,Kymora,Pressure,5.3,Dribble,Ball screen
+40,Kymora,Contain,6.6,Dribble,DHO
+41,Mary,Pressure,8.1,Dribble,DHO
+42,Kymora,Contain,3.9,Dribble,DHO
+43,Kymora,Pressure,6.5,Dribble,DHO
+44,Kymora,Pressure,7.2,Dribble,DHO
+45,Kymora,Contain,5.1,Dribble,Delay
+46,Kymora,Contain,4.6,Dribble,Delay
+47,Kymora,Pressure,7.2,Dribble,Deck
+48,Kymora,Pressure,5.7,Dribble,77
+49,Kymora,Pressure,6.7,Dribble,High horns
+50,Kymora,Contain,7.2,Dribble,Stew
+51,Kymora,Pressure,6.9,Dribble,Stagger
+52,Sintija,Pressure,6.8,Dribble,Away
+53,Kymora,Pressure,4.7,Dribble,Ram
+54,Kymora,Contain,5.2,Dribble,77
+55,Kymora,Contain,8.8,Dribble,DHO
+56,Mary,Contain,5.8,Dribble,Delay
+57,Kymora,Pressure,7.1,Dribble,Ball screen
+58,Kymora,Contain,4.3,Dribble,Delay
+59,Kymora,Pressure,6.4,Dribble,Attack
+60,Mary,Contain,4.5,Dribble,Delay
+61,Kymora,Pressure,5.2,Dribble,DHO
+62,Mary,Pressure,4.1,Dribble,Attack
+63,Kymora,Pressure,3.3,Dribble,Attack
+64,Kymora,Pressure,4.6,Dribble,Ball screen
+65,Kymora,Pressure,9.8,Dribble,DHO
+66,Kymora,Pressure,3.9,Dribble,Delay
+67,Sintija,Pressure,5.3,Dribble,Attack
+68,Kymora,Pressure,5.2,Dribble,Gut
+69,Kymora,Pressure,4.7,Dribble,DHO
+70,Mary,Pressure,5.2,Dribble,Delay
+71,Sintija,Pressure,4.7,Dribble,DHO
+72,Kymora,Pressure,8.8,Dribble,Delay
+73,Kymora,Contain,4.8,Dribble,Ball screen
+74,Kymora,Pressure,4.6,Dribble,Attack
+75,Sintija,Contain,5.9,Dribble,DHO
+76,Kymora,Pressure,6.2,Pass,Attack
+77,Kymora,Contain,6.5,Dribble,Stew
+78,Kymora,Contain,6.2,Dribble,DHO
+79,Kymora,Pressure,6.3,Dribble,Wedge
+80,Kymora,Pressure,2.5,Dribble,Attack
+81,Mary,Contain,11.2,Advance pass,Deck
+82,Mary,Contain,5.4,Dribble,Houston
+83,Mary,Pressure,4.7,Dribble,Attack
+84,Kymora,Pressure,5.2,Dribble,Delay
+85,Kymora,Contain,5.6,Dribble,Stew
+86,Kymora,Contain,5.2,Dribble,Attack
+87,Kymora,Contain,5.2,Dribble,DHO
+88,Kymora,Contain,6.0,Dribble,Swing
+89,Kymora,Contain,5.8,Dribble,Swing
+90,Mary,Pressure,5.7,Dribble,Stew
+91,Kymora,Pressure,5.8,Dribble,Deck
+92,Kymora,Pressure,5.2,Dribble,Away
+93,Kymora,Pressure,7.7,Dribble,DHO
+94,Mary,Contain,6.6,Dribble,Swing
+95,Kymora,Contain,4.7,Dribble,DHO
+96,Kymora,Contain,4.7,Dribble,Deck
+97,Kymora,Contain,4.4,Dribble,Ball screen
+98,Kymora,Contain,6.5,Dribble,Houston
+99,Kymora,Contain,6.2,Dribble,Houston
+100,Kymora,Contain,11.2,Dribble,Attack
+101,Kymora,Contain,2.9,Dribble,DHO
+102,Mary,Pressure,4.3,Dribble,DHO
+103,Mary,Contain,6.4,Dribble,DHO
+104,Kymora,Pressure,7.3,Dribble,DHO
+105,Sintija,Pressure,3.4,Dribble,Attack
+106,Kymora,Contain,6.8,Dribble,DHO
+107,Kymora,Contain,5.9,Dribble,Away

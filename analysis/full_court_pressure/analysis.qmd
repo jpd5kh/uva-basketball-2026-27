@@ -1,0 +1,26 @@
+---
+title: "Full-Court Pressure Analysis"
+format: html
+jupyter: python3
+execute:
+    echo: true
+    warning: false
+---
+
+## Data Import
+
+```{python}
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("full_court_pickup.csv")
+df.head()
+```
+
+## Exploratory Data Analysis
+
+```{python}
+df.info()
+df.describe()
+```
